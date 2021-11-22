@@ -1,10 +1,15 @@
 import React from "react";
+import Head from "next/head";
+import NavigationBar from "../components/navigation/NavigationBar";
 
 const Home = () => {
   return (
-    <div>
-      <h1 className="flex text-primary-100">Hello world</h1>
-    </div>
+    <>
+      <Head>
+        <title>Inici - Clínica Dental Graell</title>
+      </Head>
+      <NavigationBar />
+    </>
   );
 };
 
