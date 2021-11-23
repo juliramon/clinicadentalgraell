@@ -35,12 +35,17 @@ const NavigationBar = () => {
                 Clínica
               </a>
             </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="list-none flex flex-wrap items-center">
             <li className="ml-5">
               <a
                 href="telf:+34972000000"
                 title="Trauca'ns"
-                className="button button-primary"
+                className="flex flex-wrap flex-col"
               >
+                <span className="font-bold text-xs uppercase">Truca'ns</span>
                 972000000
               </a>
             </li>
