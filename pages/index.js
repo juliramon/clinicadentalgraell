@@ -12,7 +12,22 @@ const Home = () => {
       <NavigationBar />
       <main>
         <Fade cascade>
-          <section className="relative mt-8 flex flex-wrap items-center">
+          <section className="relative mt-4 flex flex-wrap items-center py-10">
+            <div className="absolute top-0 left-0 w-full h-full">
+              <span className="absolute top-p left-0 w-full h-full bg-primary-500 bg-opacity-50 z-10"></span>
+              <picture>
+                <source srcset="../branding/clinica-dental-graell-cover-bg.jpg" />
+                <img
+                  src="../branding/clinica-dental-graell-cover-bg.jpg"
+                  data-src="../branding/clinica-dental-graell-cover-bg.jpg"
+                  alt=""
+                  className="object-cover w-full h-full opacity-10"
+                  width=""
+                  height=""
+                  loading="lazy"
+                />
+              </picture>
+            </div>
             <div className="container mx-auto pr-9">
               <div className="flex flex-wrap justify-start">
                 <div className="w-full md:w-6/12 py-24">
@@ -49,12 +64,12 @@ const Home = () => {
             </div>
             <div className="w-full md:w-5/12 absolute inset-y-0 right-0 h-72 lg:h-full">
               <picture>
-                <source srcSet="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" />
+                <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
                 <img
-                  src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-                  data-src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+                  src="../branding/clinica-dental-graell-cover-bg.jpg"
+                  data-src="../branding/clinica-dental-graell-cover-bg.jpg"
                   alt="Clínica Dental a la Seu d'Urgell - Clínica Dental Graell"
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full "
                   width="400"
                   height="300"
                   loading="lazy"
