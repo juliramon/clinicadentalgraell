@@ -1,5 +1,20 @@
 nav
-    li a
-        @apply text-primary-300 text-base px-5
-    li:hover a
-        @apply text-primary-100
+    li 
+        @apply relative px-5
+        a
+            @apply text-primary-200 text-base 
+    li:hover 
+        a
+            @apply text-primary-100
+            &::after
+                content: ''
+                height: 3px
+                width: calc( 100% - 40px )
+                display: block
+                background: #2d2e82
+                margin-top: 10px
+                position: absolute
+    li.contact:last-child
+        a
+            &::after
+                content: none

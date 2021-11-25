@@ -12,7 +12,7 @@ const Home = () => {
       <NavigationBar />
       <main>
         <Fade cascade>
-          <section className="relative mt-4 flex flex-wrap items-center py-10">
+          <section className="relative flex flex-wrap items-center py-10">
             <div className="absolute top-0 left-0 w-full h-full">
               <span className="absolute top-p left-0 w-full h-full bg-primary-500 bg-opacity-50 z-10"></span>
               <picture>
@@ -32,15 +32,17 @@ const Home = () => {
               <div className="flex flex-wrap justify-start">
                 <div className="w-full md:w-6/12 py-24">
                   <div className="w-full md:w-10/12">
-                    <h1 className="text-5xl leading-snug text-primary-300 mt-0 mb-8">
-                      Clínica Dental a la Seu d'Urgell
+                    <h1 className="text-5xl leading-snug text-primary-300 mt-0 mb-8 font-semibold">
+                      Clínica Dental
+                      <br /> a la Seu d'Urgell
                     </h1>
                     <p className="text-primary-300 leading-8">
-                      Clínica Dental Graell és una moderna clínica dental a la
-                      Seu d'Urgell on combinem un servei integral d’odontologia
-                      avançada amb les últimes tecnologies i un tracte proper,
-                      per a donar una millor solució en cada cas i aconseguir la
-                      salut oral i retornar el somriure a cada pacient.
+                      <strong>Clínica Dental Graell</strong> és una moderna
+                      <strong> clínica dental a la Seu d'Urgell</strong> on
+                      combinem un servei integral d’odontologia avançada amb les
+                      últimes tecnologies i un tracte proper, per a donar una
+                      millor solució en cada cas i aconseguir la salut oral
+                      <br /> i retornar el somriure a cada pacient.
                     </p>
                     <div className="flex items-center mt-8">
                       <a
