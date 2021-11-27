@@ -16,9 +16,11 @@ const NavigationBar = () => {
   const blurredNav = {
     background: "rgba(255, 255, 255, 0.6",
     backdropFilter: "blur(18px)",
+    transition: "ease-in-out .3s",
   };
   const solidNav = {
     background: "transparent",
+    transition: "ease-in-out .3s",
   };
 
   return (

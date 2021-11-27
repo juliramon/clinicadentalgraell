@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Fade from "react-reveal/Fade";
 import NavigationBar from "../components/navigation/NavigationBar";
+import specialities from "../utils/specialities.json";
+import SpecialityBox from "../components/SpecialityBox";
 
 const Home = () => {
   return (
@@ -30,7 +32,7 @@ const Home = () => {
             </div>
             <div className="container mx-auto pr-9">
               <div className="flex flex-wrap justify-start">
-                <div className="w-full md:w-6/12 lg:w-7/12 pt-20">
+                <div className="w-full md:w-6/12 lg:w-7/12 pt-24">
                   <div className="w-full md:w-10/12">
                     <span className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest">
                       Creem somriures{" "}
@@ -85,7 +87,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-5/12 absolute inset-y-0 right-0 h-72 lg:h-full pt-28">
+            <div className="w-full md:w-5/12 absolute inset-y-0 right-0 h-72 lg:h-full pt-32">
               <picture>
                 <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
                 <img
@@ -106,10 +108,13 @@ const Home = () => {
             <div className="container mx-auto">
               <h2 className="text-4xl">Especialitats</h2>
               <div className="flex flex-wrap w-full -mx-6">
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
+                {specialities.map((el) => (
+                  <SpecialityBox
+                    title="Title"
+                    description="Description"
+                    icon="Icon"
+                  />
+                ))}
               </div>
             </div>
           </section>
