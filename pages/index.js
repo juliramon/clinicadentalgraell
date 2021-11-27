@@ -34,7 +34,7 @@ const Home = () => {
               <div className="flex flex-wrap justify-start">
                 <div className="w-full md:w-6/12 lg:w-7/12 pt-24">
                   <div className="w-full md:w-10/12">
-                    <span className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest">
+                    <span className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
                       Creem somriures{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
