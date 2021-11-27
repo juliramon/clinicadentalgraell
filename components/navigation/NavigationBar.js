@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const NavigationBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(
+    () =>
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 24) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      }),
+    []
+  );
+  const blurredNav = {
+    background: "rgba(255, 255, 255, 0.6",
+    backdropFilter: "blur(18px)",
+  };
+  const solidNav = {
+    background: "transparent",
+  };
+
   return (
-    <nav className="py-6 px-4">
+    <nav
+      className="py-6 px-4 fixed w-full z-50"
+      style={scrolled === true ? blurredNav : solidNav}
+    >
       <div className="container mx-auto w-full flex items-center justify-between">
         <div className="">
           <a href="/">

@@ -19,7 +19,11 @@ module.exports = {
         300: "#929295",
       },
     },
-    extend: {},
+    extend: {
+      borderRadius: {
+        '350': '350px'
+      }
+    },
   },
   variants: {
     extend: {},
