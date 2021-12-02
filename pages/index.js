@@ -102,9 +102,11 @@ const Home = () => {
         </Fade>
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
-            <div className="container mx-auto">
-              <h2 className="text-4xl">Especialitats</h2>
-              <div className="flex flex-wrap w-full -mx-6">
+            <div className="container mx-auto border-b border-primary-500 pb-12">
+              <h2 className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
+                Especialitats
+              </h2>
+              <div className="flex flex-wrap w-full -mx-10 mt-8">
                 {specialities.map((el, idx) => (
                   <SpecialityBox
                     key={idx}

@@ -2,10 +2,10 @@ import React from "react";
 
 const SpecialityBox = ({ icon, title, description }) => {
   return (
-    <div className="w-full md:w-1/4 px-6">
-      <div className="">{icon}</div>
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <div className="w-full md:w-1/4 px-10">
+      <div className="mb-5">{icon}</div>
+      <h3 className="font-bold text-primary-300 text-xl mb-4">{title}</h3>
+      <p className="text-primary-300">{description}</p>
     </div>
   );
 };
