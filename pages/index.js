@@ -4,6 +4,8 @@ import Fade from "react-reveal/Fade";
 import NavigationBar from "../components/navigation/NavigationBar";
 import specialities from "../utils/specialities.json";
 import SpecialityBox from "../components/SpecialityBox";
+import HomeTexts from "../utils/home.json";
+import GlobalTexts from "../utils/globals.json";
 
 const Home = () => {
   return (
@@ -35,7 +37,7 @@ const Home = () => {
                 <div className="w-full md:w-6/12 lg:w-7/12 pt-24">
                   <div className="w-full md:w-10/12">
                     <span className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
-                      Creem somriures{" "}
+                      {HomeTexts.tagline}{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-mood-smile ml-2"
@@ -56,16 +58,10 @@ const Home = () => {
                       </svg>
                     </span>
                     <h1 className="text-5xl leading-tight text-primary-300 mt-4 mb-8 font-semibold">
-                      Clínica Dental
-                      <br /> a la Seu d'Urgell
+                      {HomeTexts.title}
                     </h1>
                     <p className="text-primary-300 leading-8">
-                      <strong>Clínica Dental Graell</strong> és una moderna
-                      <strong> clínica dental a la Seu d'Urgell</strong> on
-                      combinem un servei integral d’odontologia avançada amb les
-                      últimes tecnologies i un tracte proper, per a donar una
-                      millor solució en cada cas i aconseguir la salut oral i
-                      retornar el somriure a cada pacient.
+                      {HomeTexts.subtitle}
                     </p>
                     <div className="flex items-center mt-8">
                       <a
@@ -73,14 +69,14 @@ const Home = () => {
                         title="Especialitats"
                         className="button button-light mr-5"
                       >
-                        Especialitats
+                        {HomeTexts.especialitats}
                       </a>
                       <a
                         href="/contacte"
                         title="Contactar"
                         className="button button-primary"
                       >
-                        Contacte
+                        {HomeTexts.contacte}
                       </a>
                     </div>
                   </div>
@@ -146,6 +142,21 @@ const Home = () => {
           </section>
         </Fade>
       </main>
+      <footer>
+        <span>{GlobalTexts.brand}</span>
+        <a href="" title="">
+          {GlobalTexts.phone}
+        </a>
+        <a href="" title="">
+          {GlobalTexts.email}
+        </a>
+        <ul>
+          <li>{GlobalTexts.address}</li>
+          <li>{GlobalTexts.zipCode}</li>
+          <li>{GlobalTexts.city}</li>
+          <li>{GlobalTexts.province}</li>
+        </ul>
+      </footer>
     </>
   );
 };

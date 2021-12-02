@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GlobalTexts from "../../utils/globals.json";
 
 const NavigationBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -94,7 +95,7 @@ const NavigationBar = () => {
                 </svg>
                 <div className="flex flex-col">
                   <span className="font-bold text-xs uppercase">Truca'ns</span>
-                  <span>972000000</span>
+                  <span>{GlobalTexts.phone}</span>
                 </div>
               </a>
             </li>
