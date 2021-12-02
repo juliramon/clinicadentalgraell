@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import GlobalTexts from "../../utils/globals.json";
 
-const NavigationBar = () => {
+const NavigationBar = ({ GlobalTexts }) => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(
     () =>
@@ -33,7 +32,7 @@ const NavigationBar = () => {
         <div className="">
           <a href="/">
             <picture>
-              <source srcset="../branding/logo-clinica-dental-graell-seu-urgell.svg" />
+              <source srcSet="../branding/logo-clinica-dental-graell-seu-urgell.svg" />
               <img
                 src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
                 data-src="../branding/logo-clinica-dental-graell-seu-urgell.svg"

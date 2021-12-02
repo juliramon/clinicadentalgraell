@@ -6,21 +6,22 @@ import specialities from "../utils/specialities.json";
 import SpecialityBox from "../components/SpecialityBox";
 import HomeTexts from "../utils/home.json";
 import GlobalTexts from "../utils/globals.json";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <>
       <Head>
-        <title>Inici - Clínica Dental Graell</title>
+        <title>Inici - {GlobalTexts.brand}</title>
       </Head>
-      <NavigationBar />
+      <NavigationBar GlobalTexts={GlobalTexts} />
       <main>
         <Fade cascade>
           <section className="relative flex flex-wrap items-center py-10 md:py-24">
             <div className="absolute top-0 left-0 w-full h-full">
               <span className="absolute top-p left-0 w-full h-full bg-primary-500 bg-opacity-50 z-10"></span>
               <picture>
-                <source srcset="../branding/clinica-dental-graell-cover-bg.jpg" />
+                <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
                 <img
                   src="../branding/clinica-dental-graell-cover-bg.jpg"
                   data-src="../branding/clinica-dental-graell-cover-bg.jpg"
@@ -40,15 +41,15 @@ const Home = () => {
                       {HomeTexts.tagline}{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-mood-smile ml-2"
+                        className="icon icon-tabler icon-tabler-mood-smile ml-2"
                         width="20"
                         height="20"
                         viewBox="0 0 24 24"
-                        stroke-width="1.5"
+                        strokeWidth="1.5"
                         stroke="#7092E8"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       >
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <circle cx="12" cy="12" r="9" />
@@ -88,7 +89,7 @@ const Home = () => {
                 <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
                 <img
                   src="../branding/clinica-dental-graell-cover-bg.jpg"
-                  data-src="../branding/clinica-dental-graell-cover-bg.jpg"
+                  datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
                   alt="Clínica Dental a la Seu d'Urgell - Clínica Dental Graell"
                   className="object-cover w-full h-full rounded-tl-350"
                   width="400"
@@ -104,10 +105,11 @@ const Home = () => {
             <div className="container mx-auto">
               <h2 className="text-4xl">Especialitats</h2>
               <div className="flex flex-wrap w-full -mx-6">
-                {specialities.map((el) => (
+                {specialities.map((el, idx) => (
                   <SpecialityBox
-                    title="Title"
-                    description="Description"
+                    key={idx}
+                    title={el.title}
+                    description={el.description}
                     icon="Icon"
                   />
                 ))}
@@ -142,21 +144,7 @@ const Home = () => {
           </section>
         </Fade>
       </main>
-      <footer>
-        <span>{GlobalTexts.brand}</span>
-        <a href="" title="">
-          {GlobalTexts.phone}
-        </a>
-        <a href="" title="">
-          {GlobalTexts.email}
-        </a>
-        <ul>
-          <li>{GlobalTexts.address}</li>
-          <li>{GlobalTexts.zipCode}</li>
-          <li>{GlobalTexts.city}</li>
-          <li>{GlobalTexts.province}</li>
-        </ul>
-      </footer>
+      <Footer GlobalTexts={GlobalTexts} />
     </>
   );
 };
