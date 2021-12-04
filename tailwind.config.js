@@ -21,8 +21,11 @@ module.exports = {
     },
     extend: {
       borderRadius: {
-        '350': '350px'
-      }
+        350: "350px",
+      },
+      lineHeight: {
+        12: "3.2",
+      },
     },
   },
   variants: {

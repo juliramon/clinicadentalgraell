@@ -6,6 +6,7 @@ import specialities from "../utils/specialities.json";
 import SpecialityBox from "../components/SpecialityBox";
 import HomeTexts from "../utils/home.json";
 import GlobalTexts from "../utils/globals.json";
+import CommonTexts from "../utils/commons.json";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
       <NavigationBar GlobalTexts={GlobalTexts} />
       <main>
         <Fade cascade>
-          <section className="relative flex flex-wrap items-center py-10 md:py-24">
+          <section className="relative flex flex-wrap items-center py-10 md:py-36">
             <div className="absolute top-0 left-0 w-full h-full">
               <span className="absolute top-p left-0 w-full h-full bg-primary-500 bg-opacity-50 z-10"></span>
               <picture>
@@ -58,26 +59,22 @@ const Home = () => {
                         <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
                       </svg>
                     </span>
-                    <h1 className="text-5xl leading-tight text-primary-300 mt-4 mb-8 font-semibold">
-                      {HomeTexts.title}
-                    </h1>
-                    <p className="text-primary-300 leading-8">
-                      {HomeTexts.subtitle}
-                    </p>
+                    <h1 className="mt-4 mb-8">{HomeTexts.title}</h1>
+                    <p className="leading-8">{HomeTexts.subtitle}</p>
                     <div className="flex items-center mt-8">
                       <a
                         href="/especialitats"
-                        title="Especialitats"
+                        title={CommonTexts.especialitats}
                         className="button button-light mr-5"
                       >
-                        {HomeTexts.especialitats}
+                        {CommonTexts.especialitats}
                       </a>
                       <a
                         href="/contacte"
-                        title="Contactar"
+                        title={CommonTexts.contacte}
                         className="button button-primary"
                       >
-                        {HomeTexts.contacte}
+                        {CommonTexts.contacte}
                       </a>
                     </div>
                   </div>
@@ -120,27 +117,81 @@ const Home = () => {
           </section>
         </Fade>
         <Fade bottom cascade>
-          <section className="relative py-12 md:py-20">
-            <div className="container mx-auto">
-              <h2 className="text-4xl">Blockquote</h2>
-              <div className="flex flex-wrap w-full -mx-6">
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
+          <section className="relative pb-12 md:pb-20 md:pt-8">
+            <div className="container mx-auto flex flex-wrap justify-between">
+              <div className="w-full md:w-1/2 md:py-8">
+                <div className="w-full md:w-9/12">
+                  <h2 className="mb-5">{HomeTexts.equip_title}</h2>
+                </div>
+                <div className="w-full md:w-9/12">
+                  <p className="mt-8">{HomeTexts.equip_text}</p>
+                  <div className="mt-12">
+                    <a
+                      href="/equip"
+                      title={CommonTexts.llegirmes}
+                      className="button button-primary"
+                    >
+                      {CommonTexts.sabermes}{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#ffffff"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <line x1="15" y1="16" x2="19" y2="12" />
+                        <line x1="15" y1="8" x2="19" y2="12" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <picture>
+                  <img
+                    src="../branding/clinica-dental-graell-cover-bg.jpg"
+                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
+                    alt={HomeTexts.equip_title}
+                    className="object-cover w-full h-full"
+                    width="400"
+                    height="300"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
           </section>
         </Fade>
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
-            <div className="container mx-auto">
-              <h2 className="text-4xl">Proposta de valor</h2>
-              <div className="flex flex-wrap w-full -mx-6">
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
-                <div className="w-full md:w-1/4 px-6"></div>
+            <div className="container mx-auto bg-primary-500 bg-opacity-20 p-32 flex flex-wrap items-center justify-between">
+              <div className="w-full md:w-1/3 h-96">
+                <picture>
+                  <source srcset="../branding/clinica-dental-graell-cover-bg.jpg" />
+                  <img
+                    src="../branding/clinica-dental-graell-cover-bg.jpg"
+                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
+                    alt={GlobalTexts.brand}
+                    className="object-cover w-full h-full"
+                    width="400"
+                    height="300"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div className="w-full md:w-1/2">
+                <blockquote>{HomeTexts.blockquote_text}</blockquote>
+                <div className="w-full flex flex-col mt-5">
+                  <span className="font-bold">Dra. M. Teresa Graell</span>
+                  <span>N. Col. 5967</span>
+                </div>
               </div>
             </div>
           </section>
