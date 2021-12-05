@@ -6,5 +6,17 @@
   "address": "C/ Bisbe Iglesias Navarri n.15, baixos, local 4",
   "zipCode": "25700",
   "city": "La Seu d'Urgell",
-  "province": "Lleida"
+  "province": "Lleida",
+  "horari": {
+    "dilluns": "9am - 6pm",
+    "dimarts": "9am - 6pm",
+    "dimecres": "9am - 6pm",
+    "dijous": "9am - 6pm",
+    "divendres": "9am - 6pm"
+  },
+  "social": {
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "google": "https://google.com/"
+  }
 }

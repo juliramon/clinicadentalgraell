@@ -59,7 +59,9 @@ const Home = () => {
                         <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
                       </svg>
                     </span>
-                    <h1 className="mt-4 mb-8">{HomeTexts.title}</h1>
+                    <h1 className="mt-4 mb-8 w-full md:w-8/12">
+                      {HomeTexts.title}
+                    </h1>
                     <p className="leading-8">{HomeTexts.subtitle}</p>
                     <div className="flex items-center mt-8">
                       <a
@@ -196,8 +198,43 @@ const Home = () => {
             </div>
           </section>
         </Fade>
+        <Fade bottom cascade>
+          <section className="relative py-12 md:py-20 bg-primary-300">
+            <div className="container mx-auto flex flex-wrap items-center justify-between">
+              <div className="w-full md:w-1/2">
+                <span className="text-secondary-100 uppercase font-semibold">
+                  {GlobalTexts.brand}
+                </span>
+                <h2 className="text-secondary-100 mt-5">
+                  {CommonTexts.citaprevia}
+                </h2>
+                <div className="mt-8">
+                  <a
+                    href="/contacte"
+                    title={CommonTexts.contacte}
+                    className="button button-light"
+                  >
+                    {CommonTexts.contacte}
+                  </a>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <picture>
+                  <source srcset="../branding/clinica-dental-graell-cover-bg.jpg" />
+                  <img
+                    src="../branding/clinica-dental-graell-cover-bg.jpg"
+                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
+                    alt={CommonTexts.citaprevia}
+                    className="object-cover w-full h-full"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </section>
+        </Fade>
       </main>
-      <Footer GlobalTexts={GlobalTexts} />
+      <Footer GlobalTexts={GlobalTexts} HomeTexts={HomeTexts} />
     </>
   );
 };
