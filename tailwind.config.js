@@ -2,6 +2,9 @@ module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container: {
+      padding: "4rem",
+    },
     fontFamily: {
       sans: ["Inter"],
     },
@@ -31,5 +34,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

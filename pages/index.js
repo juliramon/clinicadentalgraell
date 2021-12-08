@@ -8,6 +8,7 @@ import HomeTexts from "../utils/home.json";
 import GlobalTexts from "../utils/globals.json";
 import CommonTexts from "../utils/commons.json";
 import Footer from "../components/Footer";
+import CitaPrevia from "../components/CitaPrevia";
 
 const Home = () => {
   return (
@@ -59,7 +60,7 @@ const Home = () => {
                         <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
                       </svg>
                     </span>
-                    <h1 className="mt-4 mb-8 w-full md:w-8/12">
+                    <h1 className="mt-4 mb-8 w-full md:w-9/12">
                       {HomeTexts.title}
                     </h1>
                     <p className="leading-8">{HomeTexts.subtitle}</p>
@@ -101,19 +102,21 @@ const Home = () => {
         </Fade>
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
-            <div className="container mx-auto border-b border-primary-500 pb-12">
-              <h2 className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
-                Especialitats
-              </h2>
-              <div className="flex flex-wrap w-full -mx-10 mt-8">
-                {specialities.map((el, idx) => (
-                  <SpecialityBox
-                    key={idx}
-                    title={el.title}
-                    description={el.description}
-                    icon="Icon"
-                  />
-                ))}
+            <div className="container mx-auto">
+              <div className="border-b border-primary-500 pb-12">
+                <h2 className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
+                  Especialitats
+                </h2>
+                <div className="flex flex-wrap w-full -mx-8 mt-8">
+                  {specialities.map((el, idx) => (
+                    <SpecialityBox
+                      key={idx}
+                      title={el.title}
+                      description={el.description}
+                      icon="Icon"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </section>
@@ -173,66 +176,34 @@ const Home = () => {
         </Fade>
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
-            <div className="container mx-auto bg-primary-500 bg-opacity-20 p-32 flex flex-wrap items-center justify-between">
-              <div className="w-full md:w-1/3 h-96">
-                <picture>
-                  <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
-                  <img
-                    src="../branding/clinica-dental-graell-cover-bg.jpg"
-                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
-                    alt={GlobalTexts.brand}
-                    className="object-cover w-full h-full"
-                    width="400"
-                    height="300"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div className="w-full md:w-1/2">
-                <blockquote>{HomeTexts.blockquote_text}</blockquote>
-                <div className="w-full flex flex-col mt-5">
-                  <span className="font-bold">Dra. M. Teresa Graell</span>
-                  <span>N. Col. 5967</span>
+            <div className="container mx-auto">
+              <div className="bg-primary-500 bg-opacity-20 p-32 flex flex-wrap items-center justify-between">
+                <div className="w-full md:w-1/3 h-96">
+                  <picture>
+                    <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
+                    <img
+                      src="../branding/clinica-dental-graell-cover-bg.jpg"
+                      datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
+                      alt={GlobalTexts.brand}
+                      className="object-cover w-full h-full"
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <blockquote>{HomeTexts.blockquote_text}</blockquote>
+                  <div className="w-full flex flex-col mt-5">
+                    <span className="font-bold">Dra. M. Teresa Graell</span>
+                    <span>N. Col. 5967</span>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
         </Fade>
-        <Fade bottom cascade>
-          <section className="relative py-12 md:py-20 bg-primary-300">
-            <div className="container mx-auto flex flex-wrap items-center justify-between">
-              <div className="w-full md:w-1/2">
-                <span className="text-secondary-100 uppercase font-semibold">
-                  {GlobalTexts.brand}
-                </span>
-                <h2 className="text-secondary-100 mt-5">
-                  {CommonTexts.citaprevia}
-                </h2>
-                <div className="mt-8">
-                  <a
-                    href="/contacte"
-                    title={CommonTexts.contacte}
-                    className="button button-light"
-                  >
-                    {CommonTexts.contacte}
-                  </a>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2">
-                <picture>
-                  <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
-                  <img
-                    src="../branding/clinica-dental-graell-cover-bg.jpg"
-                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
-                    alt={CommonTexts.citaprevia}
-                    className="object-cover w-full h-full"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-            </div>
-          </section>
-        </Fade>
+        <CitaPrevia />
       </main>
       <Footer GlobalTexts={GlobalTexts} HomeTexts={HomeTexts} />
     </>
