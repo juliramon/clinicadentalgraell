@@ -2,21 +2,21 @@
   {
     "title": "Tractaments dentals",
     "description": "Màxima qualitat en els nostres tractaments dentals.",
-    "icon": ""
+    "icon": "../branding/icon-tractaments-dentals.svg"
   },
   {
     "title": "Tecnologia de qualitat",
     "description": "Utilitzem les darreres tecnologies per donar-te el millor servei.",
-    "icon": ""
+    "icon": "../branding/icon-tecnologia-qualitat.svg"
   },
   {
     "title": "Espai confortable",
     "description": "Les nostres instal·lacions les hem pensades per a què t'hi trobis a gust.",
-    "icon": ""
+    "icon": "../branding/icon-espai-comfortable.svg"
   },
   {
     "title": "Alta professionalitat",
     "description": "El nostre personal t'atendrà sempre amb professionalitat i amabilitat.",
-    "icon": ""
+    "icon": "../branding/icon-alta-professionalitat.svg"
   }
 ]

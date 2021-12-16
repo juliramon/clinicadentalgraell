@@ -12,7 +12,7 @@ const TeamMember = ({ image, salutation, name, numCol, description }) => {
     ));
   }
   return (
-    <div className="w-full md:w-1/4 relative bg-primary-500 bg-opacity-20 team-item">
+    <div className="w-full md:w-1/4 relative bg-primary-100 bg-opacity-20 team-item">
       <span className="absolute bottom-0 w-full h-full z-10 team-item__background"></span>
       <div className="w-full h-full aspect-w-12 aspect-h-14">
         <picture>

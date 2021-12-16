@@ -3,14 +3,14 @@ import React from "react";
 const Footer = ({ GlobalTexts, HomeTexts }) => {
   const horariList = Object.keys(GlobalTexts.horari).map((horari, idx) => (
     <li key={idx}>
-      <span className="capitalize">{horari}:</span>
+      <span className="capitalize font-bold">{horari}:</span>
       <span className="inline-block ml-2">{GlobalTexts.horari[horari]}</span>
     </li>
   ));
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-primary-500 bg-opacity-20 py-12 md:pt-24">
-      <div className="container mx-auto border-b border-primary-500 pb-12">
+    <footer className="bg-primary-100 bg-opacity-20 py-12 md:pt-24">
+      <div className="container mx-auto border-b border-primary-100 pb-12">
         <div className="flex flex-wrap flex-start justify-between -mx-12">
           <div className="w-full md:w-1/4 px-12">
             <picture>
@@ -42,7 +42,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                   height="22"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
-                  stroke="#2d2e82"
+                  stroke="#082b3d"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -69,7 +69,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                     height="22"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#2d2e82"
+                    stroke="#082b3d"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -95,7 +95,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                     height="22"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#2d2e82"
+                    stroke="#082b3d"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"

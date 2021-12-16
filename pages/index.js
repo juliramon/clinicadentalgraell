@@ -21,7 +21,7 @@ const Home = () => {
         <Fade cascade>
           <section className="relative flex flex-wrap items-center py-10 md:py-36">
             <div className="absolute top-0 left-0 w-full h-full">
-              <span className="absolute top-p left-0 w-full h-full bg-primary-500 bg-opacity-50 z-10"></span>
+              <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
               <picture>
                 <source srcet="../branding/clinica-dental-graell-cover-bg.jpg" />
                 <img
@@ -39,7 +39,7 @@ const Home = () => {
               <div className="flex flex-wrap justify-start">
                 <div className="w-full md:w-6/12 lg:w-7/12 pt-24">
                   <div className="w-full md:w-10/12">
-                    <span className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
+                    <span className="uppercase flex items-center text-sm text-primary-300 font-bold tracking-widest span-cover">
                       {HomeTexts.tagline}{" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const Home = () => {
                         height="20"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
-                        stroke="#7092E8"
+                        stroke="#076899"
                         fill="none"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -103,8 +103,8 @@ const Home = () => {
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
             <div className="container mx-auto">
-              <div className="border-b border-primary-500 pb-12">
-                <h2 className="uppercase flex items-center text-sm text-primary-400 font-bold tracking-widest span-cover">
+              <div className="border-b border-primary-100 pb-12">
+                <h2 className="uppercase flex items-center text-sm text-primary-200 font-bold tracking-widest span-cover">
                   Especialitats
                 </h2>
                 <div className="flex flex-wrap w-full -mx-8 mt-8">
@@ -113,7 +113,7 @@ const Home = () => {
                       key={idx}
                       title={el.title}
                       description={el.description}
-                      icon="Icon"
+                      icon={el.icon}
                     />
                   ))}
                 </div>
@@ -177,7 +177,7 @@ const Home = () => {
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
             <div className="container mx-auto">
-              <div className="bg-primary-500 bg-opacity-20 p-32 flex flex-wrap items-center justify-between">
+              <div className="bg-primary-100 bg-opacity-20 p-32 flex flex-wrap items-center justify-between">
                 <div className="w-full md:w-1/3 h-96">
                   <picture>
                     <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />

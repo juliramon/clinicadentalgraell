@@ -6,7 +6,7 @@ import CommonTexts from "../utils/commons.json";
 const CitaPrevia = () => {
   return (
     <Fade bottom cascade>
-      <section className="relative py-12 md:py-20 bg-primary-300">
+      <section className="relative py-12 md:py-20 bg-primary-400">
         <div className="container mx-auto flex flex-wrap items-center justify-center">
           <div className="w-full md:w-1/2">
             <span className="text-secondary-100 uppercase font-semibold">

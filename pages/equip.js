@@ -19,7 +19,7 @@ const Equip = () => {
       <main>
         <section className="py-10 md:pt-40 md:pb-12 relative">
           <div className="absolute top-0 left-0 w-full h-full">
-            <span className="absolute top-p left-0 w-full h-full bg-primary-500 bg-opacity-50 z-10"></span>
+            <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
             <picture>
               <source srcet="../branding/clinica-dental-graell-cover-bg.jpg" />
               <img
