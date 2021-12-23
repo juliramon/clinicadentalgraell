@@ -12,25 +12,26 @@ const TeamMember = ({ image, salutation, name, numCol, description }) => {
     ));
   }
   return (
-    <div className="w-full md:w-1/4 relative bg-primary-100 bg-opacity-20 team-item">
-      <span className="absolute bottom-0 w-full h-full z-10 team-item__background"></span>
-      <div className="w-full h-full aspect-w-12 aspect-h-14">
-        <picture>
-          <img
-            src={image}
-            datasrc={image}
-            className="object-cover w-full h-full"
-            width="400"
-            height="300"
-            loading="lazy"
-          />
-        </picture>
+    <div className="w-full md:w-1/4 p-4 relative">
+      <div className="relative bg-primary-100 bg-opacity-20 team-item">
+        <div className="w-full h-full aspect-w-12 aspect-h-14">
+          <picture>
+            <img
+              src={image}
+              datasrc={image}
+              className="object-cover w-full h-full"
+              width="400"
+              height="300"
+              loading="lazy"
+            />
+          </picture>
+        </div>
       </div>
-      <div className="absolute bottom-0 p-7 z-20">
-        <h2 className="text-xl">
+      <div className="py-5 z-20">
+        <p className="text-md font-bold mb-1">
           {salutation} {name}
-        </h2>
-        {subtitle}
+        </p>
+        <span className="text-sm mt-1.5 leading-relaxed block">{subtitle}</span>
       </div>
     </div>
   );

@@ -8,9 +8,10 @@ import Footer from "../components/Footer";
 import EquipTexts from "../utils/equip.json";
 import TeamMember from "../components/TeamMember";
 import CitaPrevia from "../components/CitaPrevia";
-import TeamMemberAvatar from "../components/TeamMember";
+import ReactHtmlParser from "react-html-parser";
 
 const Equip = () => {
+  const subtitle = ReactHtmlParser(EquipTexts.subtitle);
   return (
     <>
       <Head>
@@ -18,31 +19,41 @@ const Equip = () => {
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
-        <section className="py-10 md:pt-40 md:pb-12 relative">
-          <div className="absolute top-0 left-0 w-full h-full">
-            <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
-            <picture>
-              <source srcet="../branding/clinica-dental-graell-cover-bg.jpg" />
-              <img
-                src="../branding/clinica-dental-graell-cover-bg.jpg"
-                data-src="../branding/clinica-dental-graell-cover-bg.jpg"
-                alt="Clínica Dental a la Seu d'Urgell"
-                className="object-cover w-full h-full opacity-10"
-                width="400"
-                height="300"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div className="container mx-auto relative z-20">
-            <h1 className="text-4xl mt-4 mb-8 w-full md:w-6/12 leading-normal">
-              {EquipTexts.title}
-            </h1>
+        <section className="relative overflow-hidden pt-28">
+          <div className="flex flex-wrap items-center justify-between">
+            <div className="w-full md:w-5/12 h-96 relative z-20">
+              <picture>
+                <source srcset="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                <img
+                  src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                  data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                  alt=""
+                  width="400"
+                  height="300"
+                  className="object-cover object-center w-full h-full"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div className="w-full md:w-1/2">
+              <div className="w-full md:w-2/3 mt-4 mb-8">
+                <h1 className="text-3xl mt-4 mb-7 leading-snug relative z-20">
+                  {EquipTexts.title}
+                </h1>
+                <div className="pl-16 relative">
+                  <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20"></span>
+                  <span className="relative z-20">{subtitle}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section className="py-10 md:py-24">
           <div className="container mx-auto">
-            <div className="flex flex-wrap w-full relative">
+            <h2 className="text-xl flex items-center span-cover m-0">
+              {EquipTexts.compon}
+            </h2>
+            <div className="flex flex-wrap w-full relative mt-12">
               {EquipTexts.persones.map((persona, idx) => (
                 <TeamMember
                   key={idx}
