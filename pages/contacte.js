@@ -5,9 +5,20 @@ import HomeTexts from "../utils/home.json";
 import CommonTexts from "../utils/commons.json";
 import ContacteTexts from "../utils/contacte.json";
 import Footer from "../components/Footer";
-import CitaPrevia from "../components/CitaPrevia";
+import LegalTexts from "../utils/legal.json";
+import { useState } from "react";
 
 const Contacte = () => {
+  const initalState = {
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  };
+  const [state, setState] = useState(initalState);
+  const handleChange = (e) =>
+    setState({ ...state, [e.target.name]: e.target.value });
+  const handleSubmit = () => {};
   return (
     <>
       <Head>
@@ -46,13 +57,13 @@ const Contacte = () => {
                       <span className="block mb-2">
                         {ContacteTexts.contactans}
                       </span>
-                      <li>
+                      <li className="ml-6">
                         <span className="font-bold mr-2">Telèfon:</span>{" "}
                         <a href={GlobalTexts.phone} title="">
                           {GlobalTexts.phone}
                         </a>
                       </li>
-                      <li>
+                      <li className="ml-6">
                         <span className="font-bold mr-2">Whatsapp:</span>{" "}
                         <a
                           href={`https://wa.me/+34${GlobalTexts.whatsapp}`}
@@ -66,7 +77,7 @@ const Contacte = () => {
                       <span className="block mb-2">
                         {ContacteTexts.visitans}
                       </span>
-                      <li>
+                      <li className="ml-6">
                         {GlobalTexts.address}, {GlobalTexts.zipCode},{" "}
                         {GlobalTexts.city}, {GlobalTexts.province}
                       </li>
@@ -77,10 +88,73 @@ const Contacte = () => {
             </div>
           </div>
         </section>
-        <section className="py-10 md:py-24">
-          <div className="container mx-auto"></div>
+        <section className="py-10 md:py-20 bg-primary-100 bg-opacity-70 mt-8">
+          <div className="container mx-auto">
+            <div className="w-full md:w-2/4 mx-auto bg-secondary-100 py-8 px-10">
+              <h2 className="text-xl flex items-center span-cover m-0">
+                {CommonTexts.demanaCita}
+              </h2>
+              <form onSubmit={() => handleSubmit}>
+                <fieldset className="form-group">
+                  <label for="name">Nom</label>
+                  <input
+                    type="text"
+                    placeholder="Nom"
+                    name="name"
+                    id="name"
+                    onChange={handleChange}
+                    value={state.name}
+                  />
+                </fieldset>
+                <fieldset className="form-group">
+                  <label for="phone">Telèfon</label>
+                  <input
+                    type="phone"
+                    placeholder="Telèfon"
+                    name="phone"
+                    id="phone"
+                    onChange={handleChange}
+                    value={state.phone}
+                  />
+                </fieldset>
+                <fieldset className="form-group">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    placeholder="E-mail"
+                    name="email"
+                    id="email"
+                    onChange={handleChange}
+                    value={state.email}
+                  />
+                </fieldset>
+                <fieldset className="form-group">
+                  <label for="message">Comentaris</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    onChange={handleChange}
+                    value={state.message}
+                  >
+                    Comentaris
+                  </textarea>
+                </fieldset>
+                <button
+                  type="submit"
+                  className="button button-primary button-small"
+                >
+                  Enviar
+                </button>
+                <fieldset className="mt-6">
+                  <span className="text-xs block leading-4 text-secondary-700">
+                    {LegalTexts.legalForm}
+                  </span>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </section>
-        <CitaPrevia />
       </main>
       <Footer GlobalTexts={GlobalTexts} HomeTexts={HomeTexts} />
     </>

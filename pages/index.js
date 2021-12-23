@@ -91,7 +91,7 @@ const Home = () => {
                   src="../branding/clinica-dental-graell-cover-bg.jpg"
                   datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
                   alt="Clínica Dental a la Seu d'Urgell - Clínica Dental Graell"
-                  className="object-cover w-full h-full rounded-tl-350"
+                  className="object-cover w-full h-full"
                   width="400"
                   height="300"
                   loading="lazy"
