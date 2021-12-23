@@ -18,10 +18,10 @@ const CitaPrevia = () => {
             <div className="mt-8">
               <a
                 href="/contacte"
-                title={CommonTexts.contacte}
+                title={CommonTexts.demanaCita}
                 className="button button-light"
               >
-                {CommonTexts.contacte}
+                {CommonTexts.demanaCita}
               </a>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const NavigationBar = ({ GlobalTexts }) => {
+const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(
     () =>
@@ -73,7 +73,7 @@ const NavigationBar = ({ GlobalTexts }) => {
               <a
                 href="telf:+34972000000"
                 title="Trauca'ns"
-                className="flex items-center flex-wrap"
+                className="flex items-center flex-wrap no-detail"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +96,15 @@ const NavigationBar = ({ GlobalTexts }) => {
                   <span className="font-bold text-xs uppercase">Truca'ns</span>
                   <span>{GlobalTexts.phone}</span>
                 </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contacte"
+                title={CommonTexts.demanaCita}
+                className="button button-primary button-small"
+              >
+                {CommonTexts.demanaCita}
               </a>
             </li>
           </ul>

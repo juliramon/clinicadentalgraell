@@ -3,6 +3,7 @@ import Head from "next/head";
 import NavigationBar from "../components/navigation/NavigationBar";
 import GlobalTexts from "../utils/globals.json";
 import HomeTexts from "../utils/home.json";
+import CommonTexts from "../utils/commons.json";
 import Footer from "../components/Footer";
 import EquipTexts from "../utils/equip.json";
 import TeamMember from "../components/TeamMember";
@@ -15,7 +16,7 @@ const Equip = () => {
       <Head>
         <title>Equip - {GlobalTexts.brand}</title>
       </Head>
-      <NavigationBar GlobalTexts={GlobalTexts} />
+      <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
         <section className="py-10 md:pt-40 md:pb-12 relative">
           <div className="absolute top-0 left-0 w-full h-full">

@@ -14,6 +14,13 @@ nav
                 background: #004f80
                 margin-top: 10px
                 position: absolute
+            &.button
+                @apply text-secondary-100
+                &::after
+                    content: none
+            &.no-detail
+                &::after
+                    content: none
     li.contact:last-child
         a
             &::after

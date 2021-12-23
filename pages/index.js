@@ -16,7 +16,7 @@ const Home = () => {
       <Head>
         <title>Inici - {GlobalTexts.brand}</title>
       </Head>
-      <NavigationBar GlobalTexts={GlobalTexts} />
+      <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
         <Fade cascade>
           <section className="relative flex flex-wrap items-center py-10 md:py-36">
@@ -74,10 +74,10 @@ const Home = () => {
                       </a>
                       <a
                         href="/contacte"
-                        title={CommonTexts.contacte}
+                        title={CommonTexts.demanaCita}
                         className="button button-primary"
                       >
-                        {CommonTexts.contacte}
+                        {CommonTexts.demanaCita}
                       </a>
                     </div>
                   </div>
