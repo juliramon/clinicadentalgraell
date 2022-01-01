@@ -60,11 +60,6 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
                 Clínica
               </a>
             </li>
-            <li>
-              <a href="/contacte" title="Contacte">
-                Contacte
-              </a>
-            </li>
           </ul>
         </div>
         <div>
