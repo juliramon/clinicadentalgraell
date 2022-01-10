@@ -113,17 +113,29 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
             <h3>Troba'ns a</h3>
             <ul className="none">
               <li>
-                <a href={GlobalTexts.social.facebook} title="Facebook">
+                <a
+                  href={GlobalTexts.social.facebook}
+                  title="Facebook"
+                  target="_blank"
+                >
                   Facebook
                 </a>
               </li>
               <li>
-                <a href={GlobalTexts.social.instagram} title="Instagram">
+                <a
+                  href={GlobalTexts.social.instagram}
+                  title="Instagram"
+                  target="_blank"
+                >
                   Instagram
                 </a>
               </li>
               <li>
-                <a href={GlobalTexts.social.google} title="Google">
+                <a
+                  href={GlobalTexts.social.google}
+                  title="Google"
+                  target="_blank"
+                >
                   Google
                 </a>
               </li>
@@ -150,7 +162,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
               </a>
             </li>
             <li className="text-xs">
-              <a href="/politica-cookies" title="Política de cookies">
+              <a href="/politica-de-cookies" title="Política de cookies">
                 Política de cookies
               </a>
             </li>

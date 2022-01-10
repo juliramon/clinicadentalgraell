@@ -29,18 +29,13 @@ const Contacte = () => {
         <section className="relative overflow-hidden pt-28">
           <div className="flex flex-wrap items-center justify-between">
             <div className="w-full md:w-5/12 h-96 relative z-20">
-              <picture>
-                <source srcset="../branding/equip-clinica-dentall-graell-cover.jpg" />
-                <img
-                  src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                  data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                  alt=""
-                  width="400"
-                  height="300"
-                  className="object-cover object-center w-full h-full"
-                  loading="lazy"
-                />
-              </picture>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5896.713122269372!2d1.452031228105912!3d42.3562398450501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edc5966ee27b%3A0xdaffd93e0fd19eed!2s25700%20La%20Seu%20d&#39;Urgell%2C%20L%C3%A9rida!5e0!3m2!1ses!2ses!4v1641844428211!5m2!1ses!2ses"
+                style={{ border: "0" }}
+                allowfullscreen=""
+                className="w-full h-full"
+                loading="lazy"
+              ></iframe>
             </div>
             <div className="w-full md:w-1/2">
               <div className="w-full md:w-2/3 mt-4 mb-8">
@@ -88,10 +83,25 @@ const Contacte = () => {
             </div>
           </div>
         </section>
-        <section className="py-10 md:py-20 bg-primary-100 bg-opacity-70 mt-8">
-          <div className="container mx-auto">
+        <section className="py-10 md:py-20 mt-8 relative">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
+            <picture>
+              <source srcet="../branding/clinica-dental-graell-cover-bg.jpg" />
+              <img
+                src="../branding/clinica-dental-graell-cover-bg.jpg"
+                data-src="../branding/clinica-dental-graell-cover-bg.jpg"
+                alt="Clínica Dental a la Seu d'Urgell"
+                className="object-cover w-full h-full opacity-10"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div className="container mx-auto relative z-10">
             <div className="w-full md:w-2/4 mx-auto bg-secondary-100 py-8 px-10">
-              <h2 className="text-xl flex items-center span-cover m-0">
+              <h2 className="text-xl flex items-center span-cover m-0 mb-5">
                 {CommonTexts.demanaCita}
               </h2>
               <form onSubmit={() => handleSubmit}>
@@ -104,6 +114,7 @@ const Contacte = () => {
                     id="name"
                     onChange={handleChange}
                     value={state.name}
+                    required
                   />
                 </fieldset>
                 <fieldset className="form-group">
@@ -115,6 +126,7 @@ const Contacte = () => {
                     id="phone"
                     onChange={handleChange}
                     value={state.phone}
+                    required
                   />
                 </fieldset>
                 <fieldset className="form-group">
@@ -126,6 +138,7 @@ const Contacte = () => {
                     id="email"
                     onChange={handleChange}
                     value={state.email}
+                    required
                   />
                 </fieldset>
                 <fieldset className="form-group">
@@ -136,6 +149,7 @@ const Contacte = () => {
                     rows="5"
                     onChange={handleChange}
                     value={state.message}
+                    required
                   >
                     Comentaris
                   </textarea>
