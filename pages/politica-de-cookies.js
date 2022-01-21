@@ -170,6 +170,163 @@ const PoliticaCookies = () => {
                 <br /> E-mail: contacte@clinicadentalgraell.com
               </p>
               <h2>COOKIES UTILITZADES EN AQUEST LLOC WEB</h2>
+              <div className="w-full border border-b-0 py-2 px-4 mt-5">
+                <p className="uppercase text-lg font-bold my-0">Panell de configuració</p>
+              </div>
+              <div className="w-full border border-b-0 py-2 px-4">
+                <p className="uppercase text-base font-bold my-0">Cookies analítiques</p>
+                <span className="text-sm">Canviar la selecció segons si es desitja acceptar o rebutjar la instal·lació d’aquestes cookies</span>
+              </div>
+              <div className="cookies-table">
+                <div className="table w-full">
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Nom</div>
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Tipus</div>
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Propietat</div>
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Finalitat</div>
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Termini</div>
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 py-2 px-4">Observacions</div>
+                    </div>
+                  </div>
+                  <div className="table-row-group">
+                      <div className="table-row">
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">_utma</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Analítica</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Google Analytics</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Registra la data de la primera i última vegada que l’usuari va visitar el lloc web</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">2 anys</div>
+                        <div className="table-cell text-sm text-left border border-b-0 py-2 px-4">Persistent</div>
+                      </div>
+                  </div>
+                  <div className="table-row-group">
+                      <div className="table-row">
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">_utma</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Analítica</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Google Analytics</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Registra l’hora d’arribada a la pàgina web</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">30 minuts</div>
+                        <div className="table-cell text-sm text-left border border-b-0 py-2 px-4">Sessió</div>
+                      </div>
+                  </div>
+                  <div className="table-row-group">
+                      <div className="table-row">
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">_utma</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Analítica</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Google Analytics</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">S’utilitza per a la interoperabilitat amb el codi de seguiment urchin.js</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">1 any</div>
+                        <div className="table-cell text-sm text-left border border-b-0 py-2 px-4">Sessió</div>
+                      </div>
+                  </div>
+                  <div className="table-row-group">
+                      <div className="table-row">
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">_utma</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Analítica</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Google Analytics</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Processa el tipus de sol·licitud demanada per l’usuari</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">En finalitzar la sessió</div>
+                        <div className="table-cell text-sm text-left border border-b-0 py-2 px-4">Sessió</div>
+                      </div>
+                  </div>
+                  <div className="table-row-group">
+                      <div className="table-row">
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">_utma</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Analítica</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Google Analytics</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">Segmenta dades demogràfiques</div>
+                        <div className="table-cell text-sm text-left border border-b-0 border-r-0 py-2 px-4">En finalitzar la sessió</div>
+                        <div className="table-cell text-sm text-left border border-b-0 py-2 px-4">Sessió</div>
+                      </div>
+                  </div>
+                  <div className="table-row-group">
+                      <div className="table-row">
+                        <div className="table-cell text-sm text-left border border-r-0 py-2 px-4">_utma</div>
+                        <div className="table-cell text-sm text-left border border-r-0 py-2 px-4">Analítica</div>
+                        <div className="table-cell text-sm text-left border border-r-0 py-2 px-4">Google Analytics</div>
+                        <div className="table-cell text-sm text-left border border-r-0 py-2 px-4">Emmagatzema la font de trànsit o una campanya per explicar com l’usuari va arribar al lloc web</div>
+                        <div className="table-cell text-sm text-left border border-r-0 py-2 px-4">6 mesos</div>
+                        <div className="table-cell text-sm text-left border  py-2 px-4">Persistent</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <p className="mt-5">Obtenir més informació per desactivar les cookies de Google Analytics:</p>
+              <ul>
+                <li>
+                  <a href="https://policies.google.com/technologies/cookies#managing-cookies" title="Política de privacitat de Google" target="_blank" className="font-bold underline">Política de privacitat de Google</a>
+                </li>
+                <li>
+                  <a href="https://support.google.com/analytics/answer/181881?hl=es" title="Exclusió de Google Analytics" target="_blank" className="font-bold underline">Exclusió de Google Analytics</a>
+                </li>
+              </ul>
+              <div className="w-full border border-b-0 py-2 px-4 mt-5">
+                <p className="uppercase text-lg font-bold my-0">Com eliminar les cookies dels navegadors més comuns</p>
+              </div>
+              <div className="browser-cookies-table">
+                <div className="table w-full">
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Chrome</div>
+                      <div className="table-cell text-xs text-left underline border border-b-0 py-2 px-4">
+                        <a href="http://support.google.com/chrome/answer/95647?hl=es" title="http://support.google.com/chrome/answer/95647?hl=es" target="_blank">
+                          http://support.google.com/chrome/answer/95647?hl=es
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Edge</div>
+                      <div className="table-cell text-xs text-left underline border border-b-0 py-2 px-4">
+                        <a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" title="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">
+                          https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">explorer</div>
+                      <div className="table-cell text-xs text-left underline border border-b-0 py-2 px-4">
+                        <a href="https://support.microsoft.com/es-es/help/278835/how-to-delete-cookie-files-in-internet-explorer" title="https://support.microsoft.com/es-es/help/278835/how-to-delete-cookie-files-in-internet-explorer" target="_blank">
+                          https://support.microsoft.com/es-es/help/278835/how-to-delete-cookie-files-in-internet-explorer
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Firefox</div>
+                      <div className="table-cell text-xs text-left underline border border-b-0 py-2 px-4">
+                        <a href="https://www.mozilla.org/es-ES/privacy/websites/#cookies" title="https://www.mozilla.org/es-ES/privacy/websites/#cookies" target="_blank">
+                          https://www.mozilla.org/es-ES/privacy/websites/#cookies
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-b-0 border-r-0 py-2 px-4">Safari</div>
+                      <div className="table-cell text-xs text-left underline border border-b-0 py-2 px-4">
+                        <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" title="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank">
+                          https://support.apple.com/es-es/guide/safari/sfri11471/mac
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="table-row-group">
+                    <div className="table-row">
+                      <div className="table-cell text-xs font-bold uppercase text-left border border-r-0 py-2 px-4">Opera</div>
+                      <div className="table-cell text-xs text-left underline border py-2 px-4">
+                        <a href="https://help.opera.com/en/latest/security-and-privacy/#clearBrowsingData" title="https://help.opera.com/en/latest/security-and-privacy/#clearBrowsingData" target="_blank">
+                          https://help.opera.com/en/latest/security-and-privacy/#clearBrowsingData
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

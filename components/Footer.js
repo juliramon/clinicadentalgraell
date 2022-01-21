@@ -152,8 +152,8 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
           </ul>
           <ul className="list-none flex items-center">
             <li className="mr-5 text-xs">
-              <a href="/condicions-us" title="Termes i Condicions d'ús">
-                Termes i Condicions d'ús
+              <a href="/avis-legal" title="Avís legal">
+                Avís legal
               </a>
             </li>
             <li className="mr-5 text-xs">
