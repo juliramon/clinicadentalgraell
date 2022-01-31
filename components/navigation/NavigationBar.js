@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Link from "next/link";
 const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(
@@ -30,35 +30,37 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
     >
       <div className="container mx-auto w-full flex items-center justify-between">
         <div className="">
-          <a href="/">
-            <picture>
-              <source srcSet="../branding/logo-clinica-dental-graell-seu-urgell.svg" />
-              <img
-                src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
-                data-src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
-                alt="Clínica Dental Graell"
-                width="157"
-                height="54"
-              />
-            </picture>
-          </a>
+          <Link href="/">
+            <a>
+              <picture>
+                <source srcSet="../branding/logo-clinica-dental-graell-seu-urgell.svg" />
+                <img
+                  src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
+                  data-src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
+                  alt="Clínica Dental Graell"
+                  width="157"
+                  height="54"
+                />
+              </picture>
+            </a>
+          </Link>
         </div>
         <div>
           <ul className="list-none flex flex-wrap items-center">
             <li>
-              <a href="/especialitats" title="Especialitats">
-                Especialitats
-              </a>
+              <Link href="/especialitats" title="Especialitats">
+                <a>Especialitats</a>
+              </Link>
             </li>
             <li>
-              <a href="/equip" title="Equip">
-                Equip
-              </a>
+              <Link href="/equip" title="Equip">
+                <a>Equip</a>
+              </Link>
             </li>
             <li>
-              <a href="/clínica" title="Clínica">
-                Clínica
-              </a>
+              <Link href="/clínica" title="Clínica">
+                <a>Clínica</a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -94,13 +96,11 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
               </a>
             </li>
             <li>
-              <a
-                href="/contacte"
-                title={CommonTexts.demanaCita}
-                className="button button-primary button-small"
-              >
-                {CommonTexts.demanaCita}
-              </a>
+              <Link href="/contacte" title={CommonTexts.demanaCita}>
+                <a className="button button-primary button-small">
+                  {CommonTexts.demanaCita}
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
