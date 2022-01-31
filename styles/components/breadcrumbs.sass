@@ -1,0 +1,16 @@
+.breadcrumb
+    @apply list-none m-0 p-0
+    li
+        @apply pl-0 pr-3 flex items-center uppercase text-xs text-primary-400 opacity-60 tracking-wider
+        &:first-child
+            @apply font-medium
+        &::before
+            content: none
+            margin-right: 0
+        &::after
+            content: "/"
+            display: block
+            margin-left: 10px
+        &:last-child
+            &::after
+                content: none

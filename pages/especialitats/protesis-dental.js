@@ -7,11 +7,11 @@ import CommonTexts from "../../utils/commons.json";
 import Footer from "../../components/Footer";
 import CitaPrevia from "../../components/CitaPrevia";
 
-const OrtodonciaConservadora = () => {
+const ProtesisDental = () => {
   return (
     <>
       <Head>
-        <title>Ortodòncia conservadora - {GlobalTexts.brand}</title>
+        <title>Pròtesis dental - {GlobalTexts.brand}</title>
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
@@ -39,19 +39,20 @@ const OrtodonciaConservadora = () => {
                       <span>Especialitats</span>
                     </li>
                     <li>
-                      <span>Ortodòncia conservadora</span>
+                      <span>Periodòncia dental</span>
                     </li>
                   </ul>
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
-                    Ortodòncia conservadora
+                    Pròtesis dental
                   </h1>
                   <div className="pl-16 relative">
-                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20"></span>
+                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20"></span>
                     <span className="relative z-20">
-                      L’odontologia conservadora i restauradora ens permet
-                      prevenir, aturar i curar la càries dental en totes les
-                      seves fases des de la menor a la major destrucció de
-                      teixit dentari.{" "}
+                      La prostodòncia és la branca de l’odontologia que
+                      s’encarrega de la restauració i manteniment de la funció
+                      masticatòria, l’estètica i la salut del pacient mitjançant
+                      la restauració de les dents naturals i/o la substitució de
+                      les peces dentàries.
                     </span>
                   </div>
                 </div>
@@ -62,30 +63,33 @@ const OrtodonciaConservadora = () => {
             <div className="container mx-auto">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
-                  La càries dental pot afectar lleument a l’estructura dentària,
-                  destruint únicament l’esmalt o progressar a estadis més greus,
-                  envaint teixits més profunds com són la dentina o la polpa
-                  dental. El tractament de la càries dental es basa en
-                  l’eliminació del teixit infectat i la posterior reconstrucció
-                  del teixit perdut per materials biocompatibles, en aquest cas
-                  resines compostes. És el que abans popularment coneixíem com
-                  els empasts dentals i el que actualment anomenem obturacions
-                  dentals.{" "}
+                  En la societat moderna, el deteriorament de la salut
+                  bucodental i la pèrdua de dents sovint es deuen a les càries i
+                  a la malaltia periodontal. Altres causes inclouen el càncer
+                  bucal, traumatismes i trastorns del moviment de l’aparell
+                  masticatori com el bruxisme. Com a resultat, el pacient pot
+                  patir problemes estètics, alteració de la funció masticatòria,
+                  malestar psicològic i deteriorament de la qualitat de vida.
                 </p>
                 <div className="-ml-24 pt-10 pb-8">
                   <blockquote>
-                    A dia d’avui, l’odontologia restauradora engloba un arsenal
-                    de possibilitats pel que fa a la tècnica i materials de
-                    restauració.
+                    El prostodoncista elabora plans de tractament en estreta
+                    col·laboració amb altres odontòlegs especialistes, per tal
+                    d’oferir als pacient la millor atenció possible.
                   </blockquote>
                 </div>
                 <p>
-                  S’aconsegueix un resultat exitós mitjançant la realització de
-                  tots els procediments adequats amb els millors materials i una
-                  excel·lent rehabilitació de l’anatomia de cadascuna de les
-                  peces dentàries. A dia d’avui, l’odontologia restauradora
-                  engloba un arsenal de possibilitats pel que fa a la tècnica i
-                  materials de restauració.{" "}
+                  Bona part de la feina quotidiana d’un prostodoncista té a
+                  veure amb l’estètica dental. Tant si es tracta d’una única
+                  restauració o una rehabilitació més extensa. Tot procediment
+                  utilitzat amb un pacient no només ha de ser funcional i
+                  còmode, sinó que a més ha de reproduir fidelment la forma i
+                  l’estètica de les dents naturals amb l’objectiu de mantenir un
+                  aspecte saludable i atractiu. El prostodoncista és expert en
+                  tècniques de blanquejament i adhesió, reproducció de colors,
+                  ús de carilles dentals per remodelar i millorar l’estètica de
+                  les dents, i fabricació i col·locació de pròtesis fixes, per
+                  exemple corones dentals i ponts.
                 </p>
               </div>
             </div>
@@ -99,4 +103,4 @@ const OrtodonciaConservadora = () => {
   );
 };
 
-export default OrtodonciaConservadora;
+export default ProtesisDental;

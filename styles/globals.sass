@@ -7,6 +7,7 @@
 @import "base/global"
 @import "components/button"
 @import "components/dropdown"
+@import "components/breadcrumbs"
 @import "layout/footer"
 @import "layout/forms"
 @import "layout/navigation"
@@ -55,8 +56,8 @@ blockquote
         background-size: cover
 
 main li
-    @apply flex items-start
+    @apply pl-3 relative
     &::before
+        @apply absolute block -left-5
         content: "–"
-        display: block
         margin-right: 15px

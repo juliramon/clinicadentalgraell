@@ -7,11 +7,11 @@ import CommonTexts from "../../utils/commons.json";
 import Footer from "../../components/Footer";
 import CitaPrevia from "../../components/CitaPrevia";
 
-const OrtodonciaConservadora = () => {
+const EstaticaDental = () => {
   return (
     <>
       <Head>
-        <title>Ortodòncia conservadora - {GlobalTexts.brand}</title>
+        <title>Estètica dental - {GlobalTexts.brand}</title>
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
@@ -39,19 +39,20 @@ const OrtodonciaConservadora = () => {
                       <span>Especialitats</span>
                     </li>
                     <li>
-                      <span>Ortodòncia conservadora</span>
+                      <span>Estètica dental</span>
                     </li>
                   </ul>
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
-                    Ortodòncia conservadora
+                    Estètica dental
                   </h1>
                   <div className="pl-16 relative">
                     <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20"></span>
                     <span className="relative z-20">
-                      L’odontologia conservadora i restauradora ens permet
-                      prevenir, aturar i curar la càries dental en totes les
-                      seves fases des de la menor a la major destrucció de
-                      teixit dentari.{" "}
+                      L’estètica dental és la disciplina de l’Odontologia que
+                      s’encarrega de tractar totes aquelles alteracions,
+                      dismòrfies i patologies de la morfologia bucodental per
+                      aconseguir un cànon de bellesa que s’ajusti a l’ideal
+                      social d’avui en dia.
                     </span>
                   </div>
                 </div>
@@ -62,30 +63,22 @@ const OrtodonciaConservadora = () => {
             <div className="container mx-auto">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
-                  La càries dental pot afectar lleument a l’estructura dentària,
-                  destruint únicament l’esmalt o progressar a estadis més greus,
-                  envaint teixits més profunds com són la dentina o la polpa
-                  dental. El tractament de la càries dental es basa en
-                  l’eliminació del teixit infectat i la posterior reconstrucció
-                  del teixit perdut per materials biocompatibles, en aquest cas
-                  resines compostes. És el que abans popularment coneixíem com
-                  els empasts dentals i el que actualment anomenem obturacions
-                  dentals.{" "}
+                  L’estètica dental és la disciplina de l’Odontologia que
+                  s’encarrega de tractar totes aquelles alteracions, dismòrfies
+                  i patologies de la morfologia bucodental per aconseguir un
+                  cànon de bellesa que s’ajusti a l’ideal social d’avui en dia.
                 </p>
                 <div className="-ml-24 pt-10 pb-8">
                   <blockquote>
-                    A dia d’avui, l’odontologia restauradora engloba un arsenal
-                    de possibilitats pel que fa a la tècnica i materials de
-                    restauració.
+                    Pràctiques com el blanquejament dental o les carilles tenen
+                    com a objectiu millorar l’estètica dental.
                   </blockquote>
                 </div>
                 <p>
-                  S’aconsegueix un resultat exitós mitjançant la realització de
-                  tots els procediments adequats amb els millors materials i una
-                  excel·lent rehabilitació de l’anatomia de cadascuna de les
-                  peces dentàries. A dia d’avui, l’odontologia restauradora
-                  engloba un arsenal de possibilitats pel que fa a la tècnica i
-                  materials de restauració.{" "}
+                  Actualment, tenir un bon somriure és sinònim de salut i
+                  benestar social. Cada vegada són més els pacients que es
+                  preocupen per tenir no només una boca sana, sinó també un
+                  bonic somriure gràcies a tractament de blanquejament dental.
                 </p>
               </div>
             </div>
@@ -99,4 +92,4 @@ const OrtodonciaConservadora = () => {
   );
 };
 
-export default OrtodonciaConservadora;
+export default EstaticaDental;

@@ -7,11 +7,11 @@ import CommonTexts from "../../utils/commons.json";
 import Footer from "../../components/Footer";
 import CitaPrevia from "../../components/CitaPrevia";
 
-const OrtodonciaConservadora = () => {
+const RadiologiaDigital = () => {
   return (
     <>
       <Head>
-        <title>Ortodòncia conservadora - {GlobalTexts.brand}</title>
+        <title>Radiologia digital - {GlobalTexts.brand}</title>
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
@@ -39,19 +39,19 @@ const OrtodonciaConservadora = () => {
                       <span>Especialitats</span>
                     </li>
                     <li>
-                      <span>Ortodòncia conservadora</span>
+                      <span>Radiologia digital</span>
                     </li>
                   </ul>
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
-                    Ortodòncia conservadora
+                    Radiologia digital
                   </h1>
                   <div className="pl-16 relative">
                     <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20"></span>
                     <span className="relative z-20">
-                      L’odontologia conservadora i restauradora ens permet
-                      prevenir, aturar i curar la càries dental en totes les
-                      seves fases des de la menor a la major destrucció de
-                      teixit dentari.{" "}
+                      Les radiografies intraorals i extraorals són les proves
+                      complementàries més habituals en Odontologia. En els
+                      últims temps la radiologia ha sofert una gran evolució amb
+                      el canvi del sistema analògic pel digital.
                     </span>
                   </div>
                 </div>
@@ -62,30 +62,19 @@ const OrtodonciaConservadora = () => {
             <div className="container mx-auto">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
-                  La càries dental pot afectar lleument a l’estructura dentària,
-                  destruint únicament l’esmalt o progressar a estadis més greus,
-                  envaint teixits més profunds com són la dentina o la polpa
-                  dental. El tractament de la càries dental es basa en
-                  l’eliminació del teixit infectat i la posterior reconstrucció
-                  del teixit perdut per materials biocompatibles, en aquest cas
-                  resines compostes. És el que abans popularment coneixíem com
-                  els empasts dentals i el que actualment anomenem obturacions
-                  dentals.{" "}
+                  Les radiografies intraorals i extraorals són les proves
+                  complementàries més habituals en Odontologia. En els últims
+                  temps la radiologia ha sofert una gran evolució amb el canvi
+                  del sistema analògic pel digital.
                 </p>
-                <div className="-ml-24 pt-10 pb-8">
-                  <blockquote>
-                    A dia d’avui, l’odontologia restauradora engloba un arsenal
-                    de possibilitats pel que fa a la tècnica i materials de
-                    restauració.
-                  </blockquote>
-                </div>
                 <p>
-                  S’aconsegueix un resultat exitós mitjançant la realització de
-                  tots els procediments adequats amb els millors materials i una
-                  excel·lent rehabilitació de l’anatomia de cadascuna de les
-                  peces dentàries. A dia d’avui, l’odontologia restauradora
-                  engloba un arsenal de possibilitats pel que fa a la tècnica i
-                  materials de restauració.{" "}
+                  A la nostra clínica tots els aparells són digitals, cosa que
+                  ens permet irradiar molt menys als pacients. Disposem de
+                  visografia (aparell digital per a les radiografies intraorals)
+                  i a més a més, disposem d’un TAC per a poder realitzar imatges
+                  en 3D, indispensable en els casos complicats de cirurgia i
+                  implantologia. També podem realitzar ortopantomografies i
+                  teleradiografies.
                 </p>
               </div>
             </div>
@@ -99,4 +88,4 @@ const OrtodonciaConservadora = () => {
   );
 };
 
-export default OrtodonciaConservadora;
+export default RadiologiaDigital;
