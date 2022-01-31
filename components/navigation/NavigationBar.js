@@ -47,10 +47,81 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
         </div>
         <div>
           <ul className="list-none flex flex-wrap items-center">
-            <li>
-              <Link href="/especialitats" title="Especialitats">
-                <a>Especialitats</a>
-              </Link>
+            <li className="dropdown">
+              <span>Especialitats</span>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link
+                    href="/especialitats/ortodoncia-conservadora"
+                    title="Ortodòncia conservadora"
+                  >
+                    <a>Ortodòncia conservadora</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/especialitats/endodoncia" title="Endodòncia">
+                    <a>Endodòncia</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/especialitats/periodoncia" title="Periodòncia">
+                    <a>Periodòncia</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/especialitats/odontopediatria"
+                    title="Odontopediatria"
+                  >
+                    <a>Odontopediatria</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/especialitats/cirurgia-oral"
+                    title="Cirurgia oral"
+                  >
+                    <a>Cirurgia oral</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/especialitats/protesis-dental"
+                    title="Pròtesis dental"
+                  >
+                    <a>Pròtesis dental</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/especialitats/estetica-dental"
+                    title="Estètica dental"
+                  >
+                    <a>Estètica dental</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/especialitats/implants-dentals"
+                    title="Implants dentals"
+                  >
+                    <a>Implants dentals</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/especialitats/ortodoncia" title="Ortodòncia">
+                    <a>Ortodòncia</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/especialitats/radiologia-digital"
+                    title="Radiologia digital"
+                  >
+                    <a>Radiologia digital</a>
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href="/equip" title="Equip">

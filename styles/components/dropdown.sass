@@ -1,0 +1,16 @@
+.dropdown
+    @apply relative
+    .dropdown-menu
+        @apply hidden
+    &:hover
+        .dropdown-menu
+            @apply flex flex-wrap absolute bg-primary-100 py-2
+            li
+                @apply whitespace-nowrap py-2 px-8 w-full cursor-pointer
+                a
+                    &::after
+                        content: none
+                &:hover
+                    @apply bg-primary-200
+                    a
+                        @apply text-secondary-100

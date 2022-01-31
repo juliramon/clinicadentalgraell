@@ -1,10 +1,10 @@
 nav
     li 
         @apply relative px-5
-        a
-            @apply text-primary-400 text-base 
+        a, span
+            @apply text-primary-400 text-base cursor-pointer
     li:hover 
-        a
+        a, span
             @apply text-primary-500
             &::after
                 content: ''
