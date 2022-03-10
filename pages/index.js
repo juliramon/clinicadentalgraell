@@ -23,10 +23,10 @@ const Home = () => {
             <div className="absolute top-0 left-0 w-full h-full">
               <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
               <picture>
-                <source srcet="../branding/clinica-dental-graell-cover-bg.jpg" />
+                <source srcet="../home-cover.jpg" />
                 <img
-                  src="../branding/clinica-dental-graell-cover-bg.jpg"
-                  data-src="../branding/clinica-dental-graell-cover-bg.jpg"
+                  src="../home-cover.jpg"
+                  data-src="../home-cover.jpg"
                   alt="Clínica Dental a la Seu d'Urgell"
                   className="object-cover w-full h-full opacity-10"
                   width="400"
@@ -86,12 +86,12 @@ const Home = () => {
             </div>
             <div className="w-full md:w-5/12 absolute inset-y-0 right-0 h-72 lg:h-full pt-32">
               <picture>
-                <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
+                <source srcSet="../home-cover.jpg" />
                 <img
-                  src="../branding/clinica-dental-graell-cover-bg.jpg"
-                  datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
+                  src="../home-cover.jpg"
+                  datasrc="../home-cover.jpg"
                   alt="Clínica Dental a la Seu d'Urgell - Clínica Dental Graell"
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full rounded-tl-md"
                   width="400"
                   height="300"
                   loading="lazy"
@@ -159,17 +159,20 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <picture>
-                  <img
-                    src="../branding/clinica-dental-graell-cover-bg.jpg"
-                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
-                    alt={HomeTexts.equip_title}
-                    className="object-cover w-full h-full"
-                    width="400"
-                    height="300"
-                    loading="lazy"
-                  />
-                </picture>
+                <div className="aspect-w-12 aspect-h-9 relative">
+                  <span className="absolute left-6 -top-6 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
+                  <picture>
+                    <img
+                      src="../home-intro.jpg"
+                      datasrc="../home-intro.jpg"
+                      alt={HomeTexts.equip_title}
+                      className="object-cover w-full h-full rounded-md"
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </section>
@@ -177,7 +180,7 @@ const Home = () => {
         <Fade bottom cascade>
           <section className="relative py-12 md:py-20">
             <div className="container mx-auto">
-              <div className="bg-primary-100 bg-opacity-20 p-32 flex flex-wrap items-center justify-between">
+              <div className="bg-primary-100 bg-opacity-20 p-32 flex flex-wrap items-center justify-between rounded-md">
                 <div className="w-full md:w-1/3 h-96">
                   <picture>
                     <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
@@ -185,7 +188,7 @@ const Home = () => {
                       src="../branding/clinica-dental-graell-cover-bg.jpg"
                       datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
                       alt={GlobalTexts.brand}
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full rounded-md"
                       width="400"
                       height="300"
                       loading="lazy"

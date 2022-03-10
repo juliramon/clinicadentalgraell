@@ -36,6 +36,9 @@ const ImplantsDentals = () => {
                 <div className="w-full md:w-2/3 mt-4 mb-8">
                   <ul className="breadcrumb list-none flex items-center">
                     <li>
+                      <span>Inici</span>
+                    </li>
+                    <li>
                       <span>Especialitats</span>
                     </li>
                     <li>
@@ -46,7 +49,7 @@ const ImplantsDentals = () => {
                     Implants dentals
                   </h1>
                   <div className="pl-16 relative">
-                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20"></span>
+                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       Els implants dentals són la millor solució per a la
                       substitució permanent de les dents. Aquesta tècnica està

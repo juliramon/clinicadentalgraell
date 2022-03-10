@@ -139,8 +139,8 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
           <ul className="list-none flex flex-wrap items-center">
             <li className="ml-5 contact">
               <a
-                href="telf:+34972000000"
-                title="Trauca'ns"
+                href="telf:+973351860"
+                title="Truca'ns"
                 className="flex items-center flex-wrap no-detail"
               >
                 <svg

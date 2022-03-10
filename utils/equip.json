@@ -4,69 +4,70 @@
   "compon": "Equip professional de la Clínica Dental Graell",
   "persones": [
     {
-      "image": "undefined",
+      "image": "../equip/dra-tere-graell.jpg",
       "salutation": "Dra.",
       "name": "M. Teresa Graell Bigatà",
       "numCol": 5967,
-      "description": {
-        "0": "Llicenciada en Odontologia per la Universitat Internacional de Catalunya en 2010",
-        "1": "Curs Intensiu de Endodòncia per la Universitat Internacional de Catalunya en 2011",
-        "2": "Diploma en Endodòncia online per la Universitat Internacional de Catalunya en 2013",
-        "3": "Diploma en Odontopediatria online per la Universitat Internacional de Catalunya en 2018",
-        "4": "Curs “Restauraciones adhesivas indirectas: inlay, onlay y overlay. Del diseño al cementado” per la Universitat Internacional de Catalunya en 2021"
-      }
+      "description": [
+        "Llicenciada en Odontologia per la Universitat Internacional de Catalunya en 2010",
+        "Curs Intensiu de Endodòncia per la Universitat Internacional de Catalunya en 2011",
+        "Diploma en Endodòncia online per la Universitat Internacional de Catalunya en 2013",
+        "Diploma en Odontopediatria online per la Universitat Internacional de Catalunya en 2018",
+        "Curs “Restauraciones adhesivas indirectas: inlay, onlay y overlay. Del diseño al cementado” per la Universitat Internacional de Catalunya en 2021"
+      ],
+      "slug": "/equip/dra-teresa-graell-bigata"
     },
     {
       "image": "../equip/dra-aida-lazaro.jpg",
       "salutation": "Dra.",
       "name": "Aida Lázaro",
       "numCol": 6053,
-      "description": {
-        "0": "Llicenciada en Odontologia per la Universitat Internacional de Catalunya el 2010",
-        "1": "Postgrau en Pròtesis bucal per la Universitat Internacional de Catalunya el 2011",
-        "2": "Màster Universitari en Investigació en Odontologia per la Universitat Internacional de Catalunya el 2016",
-        "3": "International Master in Oral Surgery per la Universitat Internacional de Catalunya el 2017",
-        "4": "Professor assistent International Master in Oral Surgery a la Universitat Internacional de Catalunya"
-      }
+      "description": [
+        "Llicenciada en Odontologia per la Universitat Internacional de Catalunya el 2010",
+        "Postgrau en Pròtesis bucal per la Universitat Internacional de Catalunya el 2011",
+        "Màster Universitari en Investigació en Odontologia per la Universitat Internacional de Catalunya el 2016",
+        "International Master in Oral Surgery per la Universitat Internacional de Catalunya el 2017",
+        "Professor assistent International Master in Oral Surgery a la Universitat Internacional de Catalunya"
+      ],
+      "slug": "/equip/dra-aida-lazaro"
     },
     {
       "image": "../equip/dra-rina-restrepo.jpg",
       "salutation": "Dra.",
       "name": "Rina Restrepo",
       "numCol": 5767,
-      "description": {
-        "0": "Llicenciada en Odontologia per la Universitat de Barcelona en 2009",
-        "1": "Postgrau Sistema Damon dictat pel Dr. Alfredo Nappa. 2011-2012",
-        "2": "Certificació Invisalign. 2011",
-        "3": "Certificació Incognito. 2012",
-        "4": "Postgrau d’Ortodòncia: Arco recto y ortopedia maxilofacial, dictat pel Dr. B.H. «Coco» García Coffin. IAO. International Association For Orthodontics. 2012-2013",
-        "5": "Certificació Insignia, impartit per David González Zamora. 2015",
-        "6": "Estètica en composites en el sector anterior impartit por Daniele Rondoni. 2016",
-        "7": "Màster d’ortodòncia, MFS (Filosofía Multifuntion Sistem). Director: José Durán Von Arx, Orthodontic world. 2014-2017",
-        "8": "Sistema autolligat H4-Pitts impartit pel Dr. Tomas Castellanos. 2017",
-        "9": "Postgrau d’Ortodòncia Clínica Avançada impartit per Arturo Vela Lasagabaster. 2018",
-        "10": "Professora col·laboradora en màster d’ortodòncia Orthodontic Word Institute. Invisalign",
-        "11": "Certificació spark (alineadores invisibles). 2021",
-        "12": "Certificació SureSmile (alineadores invisibles). 2021"
-      }
+      "description": [
+        "Llicenciada en Odontologia per la Universitat de Barcelona en 2009",
+        "Postgrau Sistema Damon dictat pel Dr. Alfredo Nappa. 2011-2012",
+        "Certificació Invisalign. 2011",
+        "Certificació Incognito. 2012",
+        "Postgrau d’Ortodòncia: Arco recto y ortopedia maxilofacial, dictat pel Dr. B.H. «Coco» García Coffin. IAO. International Association For Orthodontics. 2012-2013",
+        "Certificació Insignia, impartit per David González Zamora. 2015",
+        "Estètica en composites en el sector anterior impartit por Daniele Rondoni. 2016",
+        "Màster d’ortodòncia, MFS (Filosofía Multifuntion Sistem). Director: José Durán Von Arx, Orthodontic world. 2014-2017",
+        "Sistema autolligat H4-Pitts impartit pel Dr. Tomas Castellanos. 2017",
+        "Postgrau d’Ortodòncia Clínica Avançada impartit per Arturo Vela Lasagabaster. 2018",
+        "Professora col·laboradora en màster d’ortodòncia Orthodontic Word Institute. Invisalign",
+        "Certificació spark (alineadores invisibles). 2021",
+        "Certificació SureSmile (alineadores invisibles). 2021"
+      ],
+      "slug": "/equip/dra-rina-restrepo"
     },
     {
-      "image": "undefined",
+      "image": "../equip/dra-elisabet-buguna.jpg",
       "salutation": "",
       "name": "Elisabet Buguña Reguant",
       "numCol": null,
-      "description": {
-        "0": "Auxiliar de clínica i atenció al pacient"
-      }
+      "description": ["Auxiliar de clínica i atenció al pacient"],
+      "slug": "/equip/elisabet-buguna-reguant"
     },
     {
-      "image": "undefined",
+      "image": "../equip/carme-graell.jpg",
       "salutation": "",
       "name": "M. Carmen Graell Bigatà",
       "numCol": null,
-      "description": {
-        "0": "Auxiliar de clínica i atenció al pacient"
-      }
+      "description": ["Auxiliar de clínica i atenció al pacient"],
+      "slug": "/equip/carmen-graell-bigata"
     }
   ]
 }

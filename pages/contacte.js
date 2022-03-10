@@ -33,17 +33,25 @@ const Contacte = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5896.713122269372!2d1.452031228105912!3d42.3562398450501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edc5966ee27b%3A0xdaffd93e0fd19eed!2s25700%20La%20Seu%20d&#39;Urgell%2C%20L%C3%A9rida!5e0!3m2!1ses!2ses!4v1641844428211!5m2!1ses!2ses"
                 style={{ border: "0" }}
                 allowfullscreen=""
-                className="w-full h-full"
+                className="w-full h-full rounded-tr-md rounded-br-md"
                 loading="lazy"
               ></iframe>
             </div>
             <div className="w-full md:w-1/2">
               <div className="w-full md:w-2/3 mt-4 mb-8">
+                <ul className="breadcrumb list-none flex items-center">
+                  <li>
+                    <span>Inici</span>
+                  </li>
+                  <li>
+                    <span>Contacte</span>
+                  </li>
+                </ul>
                 <h1 className="text-4xl mt-4 mb-7 leading-snug relative z-20">
                   {ContacteTexts.title}
                 </h1>
                 <div className="pl-16 relative">
-                  <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20"></span>
+                  <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                   <span className="relative z-20">
                     {ContacteTexts.subtitle}
                   </span>
@@ -54,7 +62,10 @@ const Contacte = () => {
                       </span>
                       <li className="ml-6">
                         <span className="font-bold mr-2">Telèfon:</span>{" "}
-                        <a href={GlobalTexts.phone} title="">
+                        <a
+                          href={GlobalTexts.phone}
+                          title={`tel:${GlobalTexts.phone}`}
+                        >
                           {GlobalTexts.phone}
                         </a>
                       </li>
@@ -100,7 +111,7 @@ const Contacte = () => {
             </picture>
           </div>
           <div className="container mx-auto relative z-10">
-            <div className="w-full md:w-2/4 mx-auto bg-secondary-100 py-8 px-10">
+            <div className="w-full md:w-2/4 mx-auto bg-secondary-100 py-8 px-10 rounded-md">
               <h2 className="text-xl flex items-center span-cover m-0 mb-5">
                 {CommonTexts.demanaCita}
               </h2>

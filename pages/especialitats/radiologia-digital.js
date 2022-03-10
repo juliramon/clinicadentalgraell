@@ -36,6 +36,9 @@ const RadiologiaDigital = () => {
                 <div className="w-full md:w-2/3 mt-4 mb-8">
                   <ul className="breadcrumb list-none flex items-center">
                     <li>
+                      <span>Inici</span>
+                    </li>
+                    <li>
                       <span>Especialitats</span>
                     </li>
                     <li>
@@ -46,7 +49,7 @@ const RadiologiaDigital = () => {
                     Radiologia digital
                   </h1>
                   <div className="pl-16 relative">
-                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20"></span>
+                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       Les radiografies intraorals i extraorals són les proves
                       complementàries més habituals en Odontologia. En els

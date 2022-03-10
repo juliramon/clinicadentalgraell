@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = ({ GlobalTexts, HomeTexts }) => {
   const horariList = Object.keys(GlobalTexts.horari).map((horari, idx) => (
@@ -116,6 +117,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                 <a
                   href={GlobalTexts.social.facebook}
                   title="Facebook"
+                  rel="nofollo noreferrer"
                   target="_blank"
                 >
                   Facebook
@@ -125,6 +127,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                 <a
                   href={GlobalTexts.social.instagram}
                   title="Instagram"
+                  rel="nofollo noreferrer"
                   target="_blank"
                 >
                   Instagram
@@ -134,6 +137,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                 <a
                   href={GlobalTexts.social.google}
                   title="Google"
+                  rel="nofollo noreferrer"
                   target="_blank"
                 >
                   Google
@@ -152,19 +156,19 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
           </ul>
           <ul className="list-none flex items-center">
             <li className="mr-5 text-xs">
-              <a href="/avis-legal" title="Avís legal">
-                Avís legal
-              </a>
+              <Link href="/avis-legal" title="Avís legal">
+                <a>Avís legal</a>
+              </Link>
             </li>
             <li className="mr-5 text-xs">
-              <a href="/politica-privacitat" title="Política de privacitat">
-                Política de privacitat
-              </a>
+              <Link href="/politica-privacitat" title="Política de privacitat">
+                <a>Política de privacitat</a>
+              </Link>
             </li>
             <li className="text-xs">
-              <a href="/politica-de-cookies" title="Política de cookies">
-                Política de cookies
-              </a>
+              <Link href="/politica-de-cookies" title="Política de cookies">
+                <a>Política de cookies</a>
+              </Link>
             </li>
           </ul>
         </div>
