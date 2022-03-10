@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
+  const [menuState, setMenuState] = useState({
+    isOpen: false,
+  });
   const [scrolled, setScrolled] = useState(false);
   useEffect(
     () =>
@@ -28,7 +31,7 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
       className="py-6 px-4 fixed w-full z-50"
       style={scrolled === true ? blurredNav : solidNav}
     >
-      <div className="container mx-auto w-full flex items-center justify-between">
+      <div className="lg:container w-full flex items-center justify-between">
         <div className="">
           <Link href="/">
             <a>
@@ -45,7 +48,57 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
             </a>
           </Link>
         </div>
-        <div>
+        <div className="lg:hidden">
+          <button
+            onClick={() =>
+              setMenuState({ ...menuState, isOpen: !menuState.isOpen })
+            }
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-menu-2"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="#004f80"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div
+          className={`nav__right relative ${menuState.isOpen ? "active" : ""}`}
+        >
+          <button
+            onClick={() =>
+              setMenuState({ ...menuState, isOpen: !menuState.isOpen })
+            }
+            className="lg:hidden absolute top-5 right-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-x"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="#004f80"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
           <ul className="list-none flex flex-wrap items-center">
             <li className="dropdown">
               <span>Especialitats</span>
@@ -133,11 +186,7 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
                 <a>Clínica</a>
               </Link>
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul className="list-none flex flex-wrap items-center">
-            <li className="ml-5 contact">
+            <li className="mt-10 lg:mt-0 lg:ml-5 contact">
               <a
                 href="telf:+973351860"
                 title="Truca'ns"
@@ -170,7 +219,7 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
             </li>
             <li>
               <Link href="/contacte" title={CommonTexts.demanaCita}>
-                <a className="button button-primary button-small">
+                <a className="button button-primary button-small flex justify-center">
                   {CommonTexts.demanaCita}
                 </a>
               </Link>
