@@ -20,6 +20,7 @@ const TeamMember = ({ image, salutation, name, numCol, description, slug }) => {
             <img
               src={image}
               datasrc={image}
+              alt={name}
               className="object-cover w-full h-full rounded-md"
               width="400"
               height="300"

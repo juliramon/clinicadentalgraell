@@ -43,39 +43,39 @@ const PoliticaPrivacitat = () => {
         <section className="py-10 md:pt-14 md:pb-20 relative">
           <div className="container mx-auto relative z-10">
             <div className="w-full md:w-1/2 mt-4 mb-8 mx-auto">
-              <h2>1. INFORMACIÓ PER A L’USUARI</h2>
+              <h2>1. INFORMACIÓ PER A L&apos;USUARI</h2>
               <p className="font-bold">
                 Qui és el responsable del tractament de les teves dades
                 personals?
               </p>
               <p>
                 Maria Teresa Graell Bigatà és el RESPONSABLE del tractament de
-                les dades personals de l’USUARI i l’informa que aquestes dades
-                es tractaran de conformitat amb el que disposa el Reglament (UE)
-                2016/679, de 27 d’abril (GDPR), i la Llei Orgànica 3/2018, de 5
-                de desembre (LOPDGDD).
+                les dades personals de l&apos;USUARI i l&apos;informa que
+                aquestes dades es tractaran de conformitat amb el que disposa el
+                Reglament (UE) 2016/679, de 27 d&apos;abril (GDPR), i la Llei
+                Orgànica 3/2018, de 5 de desembre (LOPDGDD).
               </p>
               <p className="font-bold">
                 Perquè tractem les teves dades personals?
               </p>
               <p>
-                Per mantenir una relació comercial amb l’usuari. Les operacions
-                previstes per fer el tractament són:
+                Per mantenir una relació comercial amb l&apos;usuari. Les
+                operacions previstes per fer el tractament són:
               </p>
               <ul>
                 <li>
                   Prestar assistència sanitària i la gestió adequada de la
                   mateixa (inclou el serveis sanitària i administratius per la
-                  mateixa (manteniment d’història clínica, planificació de
-                  visites, revisions, emissió de justificants d’assistència,
-                  atendre comunicacions del client, facturació i emissió de
-                  pressupostos)
+                  mateixa (manteniment d&apos;història clínica, planificació de
+                  visites, revisions, emissió de justificants
+                  d&apos;assistència, atendre comunicacions del client,
+                  facturació i emissió de pressupostos)
                 </li>
                 <li>Efectuar estudis de mercat i anàlisis estadístiques. </li>
                 <li>
                   Tramitar encàrrecs de peticions, donar resposta a les
-                  consultes o qualsevol tipus de petició que faci l’USUARI a
-                  través de qualsevol de les formes de contacte que es posen a
+                  consultes o qualsevol tipus de petició que faci l&apos;USUARI
+                  a través de qualsevol de les formes de contacte que es posen a
                   la seva disposició a la pàgina web del RESPONSABLE.
                 </li>
                 <li>
@@ -87,19 +87,19 @@ const PoliticaPrivacitat = () => {
                 Per quin motiu podem tractar les teves dades personals?
               </p>
               <p>
-                Perquè el tractament està legitimat per l’article 6 i 9 del GDPR
-                de la següent manera:
+                Perquè el tractament està legitimat per l&apos;article 6 i 9 del
+                GDPR de la següent manera:
               </p>
               <ul>
                 <li>
-                  Amb el consentiment de l’USUARI: enviament de comunicacions
-                  comercials i del butlletí informatiu.{" "}
+                  Amb el consentiment de l&apos;USUARI: enviament de
+                  comunicacions comercials i del butlletí informatiu.{" "}
                 </li>
                 <li>
                   Per interès legítim del RESPONSABLE: efectuar estudis de
                   mercat, anàlisis estadístiques, etc. i tramitar encàrrecs,
-                  factures i altres sol·licituds, etc. a petició de l’USUARI.
-                  (art 6.f RGPD)
+                  factures i altres sol·licituds, etc. a petició de
+                  l&apos;USUARI. (art 6.f RGPD)
                 </li>
                 <li>
                   Per a la realització de tractaments mèdics executades per a
@@ -115,7 +115,7 @@ const PoliticaPrivacitat = () => {
                 finalitat del tractament o mentre hi hagi prescripcions legals
                 que en dictaminin la custòdia i quan ja no sigui necessari per a
                 això, se suprimiran amb mesures de seguretat adequades per
-                garantir l’anonimització de les dades o la seva destrucció
+                garantir l&apos;anonimització de les dades o la seva destrucció
                 total.
               </p>
               <p className="font-bold">
@@ -126,21 +126,22 @@ const PoliticaPrivacitat = () => {
                 excepte, si fos necessari per al desenvolupament i execució de
                 les finalitats del tractament, als nostres proveïdors de serveis
                 relacionats amb comunicacions, amb els quals el RESPONSABLE ha
-                formalitzat els contractes de confidencialitat i d’encarregat de
-                tractament exigits per la normativa vigent de privacitat.
+                formalitzat els contractes de confidencialitat i
+                d&apos;encarregat de tractament exigits per la normativa vigent
+                de privacitat.
               </p>
               <p className="font-bold">Quins són els teus drets?</p>
-              <p>Els drets que té l’USUARI són:</p>
+              <p>Els drets que té l&apos;USUARI són:</p>
               <ul>
                 <li>Dret a retirar el consentiment en qualsevol moment.</li>
                 <li>
-                  Dret d’accés, rectificació, portabilitat i supressió de les
-                  seves dades i de limitació o oposició al seu tractament.
+                  Dret d&apos;accés, rectificació, portabilitat i supressió de
+                  les seves dades i de limitació o oposició al seu tractament.
                 </li>
                 <li>
-                  Dret a presentar una reclamació davant l’autoritat de control
-                  (www.aepd.es) si considera que el tractament no s’ajusta a la
-                  normativa vigent.
+                  Dret a presentar una reclamació davant l&apos;autoritat de
+                  control (www.aepd.es) si considera que el tractament no
+                  s&apos;ajusta a la normativa vigent.
                 </li>
               </ul>
               <p className="font-bold">
@@ -156,24 +157,25 @@ const PoliticaPrivacitat = () => {
               </p>
               <h2>
                 2. CARÀCTER OBLIGATORI O FACULTATIU DE LA INFORMACIÓ FACILITADA
-                PER L’USUARI
+                PER L&apos;USUARI
               </h2>
               <p>
                 Els USUARIS, per mitjà de les caselles corresponents i la
-                introducció de dades en els camps, marcats amb l’asterisc (*) en
-                el formulari de contacte o presentats en formularis de
+                introducció de dades en els camps, marcats amb l&apos;asterisc
+                (*) en el formulari de contacte o presentats en formularis de
                 descàrrega, accepten expressament i de manera lliure i
-                inequívoca, que les seves dades són necessàries per a l’atenció
-                de la seva petició, per part del prestador, i que per tant la
-                inclusió de les dades en els camps restants és voluntària.
-                L’USUARI garanteix que les dades personals facilitades al
-                RESPONSABLE són verídiques i es fa responsable de comunicar-ne
-                qualsevol modificació. El RESPONSABLE informa que totes les
-                dades sol·licitades a través del lloc web són obligatòries, ja
-                que són necessàries per a la prestació d’un servei òptim a
-                l’USUARI. En cas que no es facilitin totes les dades, no es
-                garanteix que la informació i serveis facilitats s’ajustin
-                completament a les seves necessitats.
+                inequívoca, que les seves dades són necessàries per a
+                l&apos;atenció de la seva petició, per part del prestador, i que
+                per tant la inclusió de les dades en els camps restants és
+                voluntària. L&apos;USUARI garanteix que les dades personals
+                facilitades al RESPONSABLE són verídiques i es fa responsable de
+                comunicar-ne qualsevol modificació. El RESPONSABLE informa que
+                totes les dades sol·licitades a través del lloc web són
+                obligatòries, ja que són necessàries per a la prestació
+                d&apos;un servei òptim a l&apos;USUARI. En cas que no es
+                facilitin totes les dades, no es garanteix que la informació i
+                serveis facilitats s&apos;ajustin completament a les seves
+                necessitats.
               </p>
               <h2>3. MESURES DE SEGURETAT</h2>
               <p>
@@ -182,10 +184,10 @@ const PoliticaPrivacitat = () => {
                 complint amb totes les disposicions de les normatives GDPR i
                 LOPDGDD per al tractament de les dades personals de la seva
                 responsabilitat, i manifestament amb els principis descrits a
-                l’article 5 del GDPR, pels quals es tracten de manera lícita,
-                lleial i transparent en relació amb l’interessat i adequades,
-                pertinents i limitades al que és necessari en relació amb les
-                finalitats per a les quals es tracten.
+                l&apos;article 5 del GDPR, pels quals es tracten de manera
+                lícita, lleial i transparent en relació amb l&apos;interessat i
+                adequades, pertinents i limitades al que és necessari en relació
+                amb les finalitats per a les quals es tracten.
               </p>
               <p>
                 El RESPONSABLE garanteix que ha implementat polítiques tècniques

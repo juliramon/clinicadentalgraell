@@ -24,7 +24,7 @@ const Endodoncia = () => {
                   <img
                     src="../branding/equip-clinica-dentall-graell-cover.jpg"
                     data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    alt=""
+                    alt="Endodòncia"
                     width="400"
                     height="300"
                     className="object-cover object-center w-full h-full"
@@ -90,42 +90,44 @@ const Endodoncia = () => {
                 </p>
                 <ul className="mb-4">
                   <li>
-                    <span class="font-bold">Càries profunda</span>: la infecció
-                    ha arribat a la dentina i ha afectat els conductes
+                    <span className="font-bold">Càries profunda</span>: la
+                    infecció ha arribat a la dentina i ha afectat els conductes
                     radiculars.
                   </li>
                   <li>
-                    <span class="font-bold">Dents fracturades</span>: la
+                    <span className="font-bold">Dents fracturades</span>: la
                     fractura de la dent permet l’entrada dels bacteris als
                     conductes radiculars, la qual cosa provoca necrosi pulpar.
                   </li>
                   <li>
-                    <span class="font-bold">Traumatismes severs</span>: un cop a
-                    l’arrel de la dent provoca la infecció dels conductes
+                    <span className="font-bold">Traumatismes severs</span>: un
+                    cop a l’arrel de la dent provoca la infecció dels conductes
                     radiculars.
                   </li>
                   <li>
-                    <span class="font-bold">Lesions periodontals greus</span>:
-                    lesions periodontals combinades.
+                    <span className="font-bold">
+                      Lesions periodontals greus
+                    </span>
+                    : lesions periodontals combinades.
                   </li>
                   <li>
-                    <span class="font-bold">Motius protètics</span>: per la
+                    <span className="font-bold">Motius protètics</span>: per la
                     col·locació posterior de corones o ponts.
                   </li>
                   <li>
-                    <span class="font-bold">
+                    <span className="font-bold">
                       Anomalies morfològiques dentals
                     </span>
                     : dens in dente.
                   </li>
                   <li>
-                    <span class="font-bold">Atricció</span>
+                    <span className="font-bold">Atricció</span>
                   </li>
                   <li>
-                    <span class="font-bold">Abrasió</span>
+                    <span className="font-bold">Abrasió</span>
                   </li>
                   <li>
-                    <span class="font-bold">Idiopàtiques</span>
+                    <span className="font-bold">Idiopàtiques</span>
                   </li>
                 </ul>
                 <p>

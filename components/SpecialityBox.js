@@ -5,7 +5,7 @@ const SpecialityBox = ({ icon, title, description }) => {
     <div className="w-full md:w-1/4 px-8">
       <div className="mb-7">
         <picture>
-          <source srcset={icon} />
+          <source srcSet={icon} />
           <img
             src={icon}
             data-src={icon}

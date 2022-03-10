@@ -35,6 +35,7 @@ const TeamSheet4 = () => {
                     <img
                       src={EquipTexts.persones[3].image}
                       datasrc={EquipTexts.persones[3].image}
+                      alt={EquipTexts.persones[3].name}
                       className="object-cover w-full h-full rounded-md"
                       width="400"
                       height="300"

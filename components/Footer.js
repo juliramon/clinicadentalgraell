@@ -117,7 +117,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                 <a
                   href={GlobalTexts.social.facebook}
                   title="Facebook"
-                  rel="nofollo noreferrer"
+                  rel="nofollow noreferrer"
                   target="_blank"
                 >
                   Facebook
@@ -127,7 +127,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                 <a
                   href={GlobalTexts.social.instagram}
                   title="Instagram"
-                  rel="nofollo noreferrer"
+                  rel="nofollow noreferrer"
                   target="_blank"
                 >
                   Instagram
@@ -137,7 +137,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
                 <a
                   href={GlobalTexts.social.google}
                   title="Google"
-                  rel="nofollo noreferrer"
+                  rel="nofollow noreferrer"
                   target="_blank"
                 >
                   Google

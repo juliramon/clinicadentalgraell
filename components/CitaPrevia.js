@@ -2,6 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import GlobalTexts from "../utils/globals.json";
 import CommonTexts from "../utils/commons.json";
+import Link from "next/link";
 
 const CitaPrevia = () => {
   return (
@@ -16,13 +17,14 @@ const CitaPrevia = () => {
               {CommonTexts.citaprevia}
             </h2>
             <div className="mt-8">
-              <a
-                href="/contacte"
-                title={CommonTexts.demanaCita}
-                className="button button-light"
-              >
-                {CommonTexts.demanaCita}
-              </a>
+              <Link href="/contacte">
+                <a
+                  title={CommonTexts.demanaCita}
+                  className="button button-light"
+                >
+                  {CommonTexts.demanaCita}
+                </a>
+              </Link>
             </div>
           </div>
           <div className="w-full md:w-1/3 relative h-72 -mb-20">

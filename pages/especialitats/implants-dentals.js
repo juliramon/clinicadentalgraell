@@ -24,7 +24,7 @@ const ImplantsDentals = () => {
                   <img
                     src="../branding/equip-clinica-dentall-graell-cover.jpg"
                     data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    alt=""
+                    alt="Implants dentals"
                     width="400"
                     height="300"
                     className="object-cover object-center w-full h-full"

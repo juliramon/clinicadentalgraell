@@ -32,7 +32,7 @@ const Contacte = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5896.713122269372!2d1.452031228105912!3d42.3562398450501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edc5966ee27b%3A0xdaffd93e0fd19eed!2s25700%20La%20Seu%20d&#39;Urgell%2C%20L%C3%A9rida!5e0!3m2!1ses!2ses!4v1641844428211!5m2!1ses!2ses"
                 style={{ border: "0" }}
-                allowfullscreen=""
+                allowFullScreen
                 className="w-full h-full rounded-tr-md rounded-br-md"
                 loading="lazy"
               ></iframe>
@@ -117,7 +117,7 @@ const Contacte = () => {
               </h2>
               <form onSubmit={() => handleSubmit}>
                 <fieldset className="form-group">
-                  <label for="name">Nom</label>
+                  <label htmlFor="name">Nom</label>
                   <input
                     type="text"
                     placeholder="Nom"
@@ -129,7 +129,7 @@ const Contacte = () => {
                   />
                 </fieldset>
                 <fieldset className="form-group">
-                  <label for="phone">Telèfon</label>
+                  <label htmlFor="phone">Telèfon</label>
                   <input
                     type="phone"
                     placeholder="Telèfon"
@@ -141,7 +141,7 @@ const Contacte = () => {
                   />
                 </fieldset>
                 <fieldset className="form-group">
-                  <label for="email">E-mail</label>
+                  <label htmlFor="email">E-mail</label>
                   <input
                     type="email"
                     placeholder="E-mail"
@@ -153,7 +153,7 @@ const Contacte = () => {
                   />
                 </fieldset>
                 <fieldset className="form-group">
-                  <label for="message">Comentaris</label>
+                  <label htmlFor="message">Comentaris</label>
                   <textarea
                     id="message"
                     name="message"
