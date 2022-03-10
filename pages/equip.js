@@ -23,7 +23,7 @@ const Equip = () => {
           <div className="flex flex-wrap items-center justify-between">
             <div className="w-full md:w-5/12 h-96 relative z-20">
               <picture>
-                <source srcset="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
                 <img
                   src="../branding/equip-clinica-dentall-graell-cover.jpg"
                   data-src="../branding/equip-clinica-dentall-graell-cover.jpg"

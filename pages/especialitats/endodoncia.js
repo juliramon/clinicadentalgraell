@@ -20,7 +20,7 @@ const Endodoncia = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-96 relative z-20">
                 <picture>
-                  <source srcset="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
                   <img
                     src="../branding/equip-clinica-dentall-graell-cover.jpg"
                     data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
@@ -51,9 +51,10 @@ const Endodoncia = () => {
                   <div className="pl-16 relative">
                     <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
-                      L’endodoncista és l’especialista de l’odontologia que
-                      estudia tot el relacionat amb el diagnòstic i el
-                      tractament dels conductes radiculars (endodòncia).
+                      L&apos;endodoncista és l&apos;especialista de
+                      l&apos;odontologia que estudia tot el relacionat amb el
+                      diagnòstic i el tractament dels conductes radiculars
+                      (endodòncia).
                     </span>
                   </div>
                 </div>
@@ -64,29 +65,29 @@ const Endodoncia = () => {
             <div className="container mx-auto">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
-                  L’endodòncia és la branca de l’odontologia especialitzada en
-                  tractar els conductes radiculars de la dent, però popularment
-                  es coneix amb el nom de “matar el nervi”. La seva funció
-                  principal és extreure parcial o totalment la polpa dental que
-                  ha estat danyada o infectada per després omplir l’espai i així
-                  tornar la funcionalitat a la dent i acabar amb el dolor
-                  provocat per la pulpitis.
+                  L&apos;endodòncia és la branca de l&apos;odontologia
+                  especialitzada en tractar els conductes radiculars de la dent,
+                  però popularment es coneix amb el nom de “matar el nervi”. La
+                  seva funció principal és extreure parcial o totalment la polpa
+                  dental que ha estat danyada o infectada per després omplir
+                  l&apos;espai i així tornar la funcionalitat a la dent i acabar
+                  amb el dolor provocat per la pulpitis.
                 </p>
                 <div className="-ml-24 pt-10 pb-8">
                   <blockquote>
                     Gràcies al tractament endodòntic les afectacions dels
-                    conductes radiculars que abans provocaven l’exodòncia de la
-                    dent, es poden tractar ara de manera menys invasiva,
+                    conductes radiculars que abans provocaven l&apos;exodòncia
+                    de la dent, es poden tractar ara de manera menys invasiva,
                     preservant la funcionalitat de la dent.
                   </blockquote>
                 </div>
                 <p>
                   El tractament endodòntic està indicat quan, per un motiu o un
                   altre, els conductes de la dent es veuen danyats pels
-                  bacteris, que arriben a afectar el nervi, l’arrel o fins i tot
-                  l’os maxil·lar on s’alberga la dent. Aquesta situació es dóna
-                  per culpa de la necrosi pulpar o mort del nervi, que pot estar
-                  causada principalment per situacions com:
+                  bacteris, que arriben a afectar el nervi, l&apos;arrel o fins
+                  i tot l&apos;os maxil·lar on s&apos;alberga la dent. Aquesta
+                  situació es dóna per culpa de la necrosi pulpar o mort del
+                  nervi, que pot estar causada principalment per situacions com:
                 </p>
                 <ul className="mb-4">
                   <li>
@@ -96,13 +97,13 @@ const Endodoncia = () => {
                   </li>
                   <li>
                     <span className="font-bold">Dents fracturades</span>: la
-                    fractura de la dent permet l’entrada dels bacteris als
+                    fractura de la dent permet l&apos;entrada dels bacteris als
                     conductes radiculars, la qual cosa provoca necrosi pulpar.
                   </li>
                   <li>
                     <span className="font-bold">Traumatismes severs</span>: un
-                    cop a l’arrel de la dent provoca la infecció dels conductes
-                    radiculars.
+                    cop a l&apos;arrel de la dent provoca la infecció dels
+                    conductes radiculars.
                   </li>
                   <li>
                     <span className="font-bold">
@@ -132,36 +133,36 @@ const Endodoncia = () => {
                 </ul>
                 <p>
                   En la clínica dental Graell apliquem un tractament
-                  personalitzat a cada pacient per realitzar l’extracció del
-                  teixit infectat o inflamat necessari i posteriorment
-                  reconstruir la dent de la manera més efectiva. L’especialista
-                  decideix el procediment endodòntic a seguir, que sol constar
-                  de tres fases:
+                  personalitzat a cada pacient per realitzar l&apos;extracció
+                  del teixit infectat o inflamat necessari i posteriorment
+                  reconstruir la dent de la manera més efectiva.
+                  L&apos;especialista decideix el procediment endodòntic a
+                  seguir, que sol constar de tres fases:
                 </p>
                 <p>
-                  L’endodoncista neteja tot el teixit destruït, eliminant la
-                  polpa danyada i la infecció. Posteriorment, omple el buit de
-                  la dent amb un material biocompatible. Finalment, es segella
-                  la dent per evitar que els bacteris tornin a arribar al seu
-                  interior.
+                  L&apos;endodoncista neteja tot el teixit destruït, eliminant
+                  la polpa danyada i la infecció. Posteriorment, omple el buit
+                  de la dent amb un material biocompatible. Finalment, es
+                  segella la dent per evitar que els bacteris tornin a arribar
+                  al seu interior.
                 </p>
                 <p>
                   En els casos en què la destrucció de la dent és major serà
                   necessari aplicar una reconstrucció més important per tornar
                   la funcionalitat a la dent. Aquestes situacions es poden
-                  solucionar amb la col·locació d’un poste que augmenti la
+                  solucionar amb la col·locació d&apos;un poste que augmenti la
                   subjecció de la restauració i amb un recobriment de cúspides
                   complet que permeti mastegar sense problemes. En altres casos,
-                  és necessari la realització d’una incrustació o corona.
+                  és necessari la realització d&apos;una incrustació o corona.
                 </p>
                 <p>
-                  No sempre som a temps de recórrer a l’endodòncia.
+                  No sempre som a temps de recórrer a l&apos;endodòncia.
                   <br />
-                  En alguns casos que la infecció ha afectat a l’arrel i fins i
-                  tot a l’os, l’única solució serà realitzar l’extracció de la
-                  dent, perquè aquests danys no vagin a més. Per evitar aquestes
-                  situacions és necessari acudir a les revisions dentals un cop
-                  a l’any a manera de prevenció.
+                  En alguns casos que la infecció ha afectat a l&apos;arrel i
+                  fins i tot a l&apos;os, l&apos;única solució serà realitzar
+                  l&apos;extracció de la dent, perquè aquests danys no vagin a
+                  més. Per evitar aquestes situacions és necessari acudir a les
+                  revisions dentals un cop a l&apos;any a manera de prevenció.
                 </p>
               </div>
             </div>

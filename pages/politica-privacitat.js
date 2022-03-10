@@ -151,7 +151,7 @@ const PoliticaPrivacitat = () => {
                 Maria Teresa Graell Bigatà. C/ Bisbe Iglesias Navarri nº 15,
                 baixos.
                 <br />
-                25700 La Seu d'Urgell (Lleida)
+                25700 La Seu d&apos;Urgell (Lleida)
                 <br />
                 E-mail: contacte@clinicadentalgraell.com
               </p>
@@ -203,7 +203,7 @@ const PoliticaPrivacitat = () => {
                 Maria Teresa Graell Bigatà. C/ Bisbe Iglesias Navarri nº 15,
                 baixos.
                 <br />
-                25700 La Seu d'Urgell (Lleida)
+                25700 La Seu d&apos;Urgell (Lleida)
                 <br />
                 E-mail: contacte@clinicadentalgraell.com
               </p>

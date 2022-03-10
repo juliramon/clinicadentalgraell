@@ -111,7 +111,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 px-12">
-            <h3>Troba'ns a</h3>
+            <h3>Troba&apos;ns a</h3>
             <ul className="none">
               <li>
                 <a

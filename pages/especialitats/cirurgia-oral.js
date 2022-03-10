@@ -20,11 +20,11 @@ const CirurgiaOral = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-96 relative z-20">
                 <picture>
-                  <source srcset="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
                   <img
                     src="../branding/equip-clinica-dentall-graell-cover.jpg"
                     data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    alt=""
+                    alt="Cirurgia Oral"
                     width="400"
                     height="300"
                     className="object-cover object-center w-full h-full"
@@ -51,11 +51,11 @@ const CirurgiaOral = () => {
                   <div className="pl-16 relative">
                     <span className="absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
-                      La cirurgia oral és l’especialitat més antiga de
-                      l’odontologia. Es dedica al diagnòstic i tractament de les
-                      malalties, traumatismes, defectes de les peces dentàries,
-                      dels maxil·lars i dels teixits tous adjacents que
-                      requereixin intervenció quirúrgica.
+                      La cirurgia oral és l&apos;especialitat més antiga de
+                      l&apos;odontologia. Es dedica al diagnòstic i tractament
+                      de les malalties, traumatismes, defectes de les peces
+                      dentàries, dels maxil·lars i dels teixits tous adjacents
+                      que requereixin intervenció quirúrgica.
                     </span>
                   </div>
                 </div>
@@ -66,10 +66,10 @@ const CirurgiaOral = () => {
             <div className="container mx-auto">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
-                  La cirurgia oral és l’especialitat més antiga de
-                  l’odontologia. Es dedica al diagnòstic i tractament de les
-                  malalties, traumatismes, defectes de les peces dentàries, dels
-                  maxil·lars i dels teixits tous adjacents que requereixin
+                  La cirurgia oral és l&apos;especialitat més antiga de
+                  l&apos;odontologia. Es dedica al diagnòstic i tractament de
+                  les malalties, traumatismes, defectes de les peces dentàries,
+                  dels maxil·lars i dels teixits tous adjacents que requereixin
                   intervenció quirúrgica. Les intervencions més freqüents són
                   les extraccions de cordals, dents incloses o impactades,
                   cirurgia preprotèsica, cirurgia de frenells…

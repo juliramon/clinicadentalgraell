@@ -161,7 +161,9 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
                   <path d="M15 3a6 6 0 0 1 6 6" />
                 </svg>
                 <div className="flex flex-col">
-                  <span className="font-bold text-xs uppercase">Truca'ns</span>
+                  <span className="font-bold text-xs uppercase">
+                    Truca&apos;ns
+                  </span>
                   <span>{GlobalTexts.phone}</span>
                 </div>
               </a>

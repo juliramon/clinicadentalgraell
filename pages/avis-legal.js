@@ -78,7 +78,7 @@ const AvisLegal = () => {
               </p>
               <p className="font-bold">Activitat reglada</p>
               <p>
-                Col·legi Professional: Col·legi Oficial d'Odontòlegs i
+                Col·legi Professional: Col·legi Oficial d&apos;Odontòlegs i
                 Estomatòlegs de Catalunya (COEC)
                 <br />
                 Núm. Col·legiat: 5967
