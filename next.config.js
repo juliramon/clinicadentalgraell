@@ -1,3 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
-}
+  env: {
+    SENDGRID_KEY: process.env.NEXT_PUBLIC_SENDGRID_KEY,
+  },
+};

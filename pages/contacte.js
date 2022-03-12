@@ -13,12 +13,40 @@ const Contacte = () => {
     name: "",
     phone: "",
     email: "",
+    subject: "",
     message: "",
   };
   const [state, setState] = useState(initalState);
+
   const handleChange = (e) =>
     setState({ ...state, [e.target.name]: e.target.value });
-  const handleSubmit = () => {};
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { name, phone, email, subject, message } = state;
+
+    const res = await fetch("/api/send-email", {
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        email: email,
+        subject: subject,
+        message: message,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    console.log(name, phone, email, subject, message);
+  };
   return (
     <>
       <Head>
@@ -30,10 +58,13 @@ const Contacte = () => {
           <div className="flex flex-wrap items-center justify-between">
             <div className="w-full md:w-5/12 hg-60 lg:h-96 relative z-20">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5896.713122269372!2d1.452031228105912!3d42.3562398450501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edc5966ee27b%3A0xdaffd93e0fd19eed!2s25700%20La%20Seu%20d&#39;Urgell%2C%20L%C3%A9rida!5e0!3m2!1ses!2ses!4v1641844428211!5m2!1ses!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.474810316639!2d1.4564471158000443!3d42.35371934349393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edda35cfa2b5%3A0xeb09ef02be2de0d1!2sCl%C3%ADnica%20Dental%20Graell!5e0!3m2!1sen!2ses!4v1647086789015!5m2!1sen!2ses"
+                width="600"
+                height="450"
                 style={{ border: "0" }}
                 allowFullScreen
                 className="w-full h-full rounded-tr-md rounded-br-md"
+                loading="lazy"
                 loading="lazy"
               ></iframe>
             </div>
@@ -141,14 +172,26 @@ const Contacte = () => {
                   />
                 </fieldset>
                 <fieldset className="form-group">
-                  <label htmlFor="email">E-mail</label>
+                  <label htmlFor="email">Correu electrònic</label>
                   <input
                     type="email"
-                    placeholder="E-mail"
+                    placeholder="Correu electrònic"
                     name="email"
                     id="email"
                     onChange={handleChange}
                     value={state.email}
+                    required
+                  />
+                </fieldset>
+                <fieldset className="form-group">
+                  <label htmlFor="subject">Assumpte</label>
+                  <input
+                    type="text"
+                    placeholder="Assumpte"
+                    name="subject"
+                    id="subject"
+                    onChange={handleChange}
+                    value={state.subject}
                     required
                   />
                 </fieldset>
