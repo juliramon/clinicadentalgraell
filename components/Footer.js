@@ -10,10 +10,10 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
   ));
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-primary-100 bg-opacity-20 py-12 md:pt-24">
+    <footer className="bg-primary-100 bg-opacity-20 pt-12 pb-8 md:pt-24">
       <div className="container border-b border-primary-100 pb-12">
-        <div className="flex flex-wrap flex-start justify-between -mx-12">
-          <div className="w-full md:w-1/4 px-12">
+        <div className="flex flex-wrap flex-start justify-between lg:-mx-12">
+          <div className="w-full md:w-1/4 lg:px-12">
             <picture>
               <source srcSet="../branding/logo-clinica-dental-graell-seu-urgell.svg" />
               <img
@@ -28,11 +28,11 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
             <h3 className="mb-2">{GlobalTexts.brand}</h3>
             <p>{HomeTexts.title}</p>
           </div>
-          <div className="w-full md:w-1/4 px-12">
+          <div className="w-full md:w-1/4 lg:px-12 mt-6 lg:mt-0">
             <h3>Horari</h3>
             <ul className="list-none">{horariList}</ul>
           </div>
-          <div className="w-full md:w-1/4 px-12">
+          <div className="w-full md:w-1/4 lg:px-12 mt-6 lg:mt-0">
             <h3>Contacte</h3>
             <ul className="list-none">
               <li className="flex">
@@ -110,7 +110,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/4 px-12">
+          <div className="w-full md:w-1/4 lg:px-12 mt-6 lg:mt-0">
             <h3>Troba&apos;ns a</h3>
             <ul className="none">
               <li>
@@ -147,7 +147,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
           </div>
         </div>
       </div>
-      <div className="container pt-12">
+      <div className="container pt-8 lg:pt-12">
         <div className="flex flex-wrap flex-start justify-between">
           <ul className="list-none">
             <li className="text-xs">

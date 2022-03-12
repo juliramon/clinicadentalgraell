@@ -13,11 +13,32 @@ const Home = () => {
   return (
     <>
       <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Inici - {GlobalTexts.brand}</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="" />
+        <meta name="robots" content="index,follow" />
+        <meta name="author" content="Innoget" />
+        <link rel="icon" href="../images/favicon.ico" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@innoget" />
+        <meta name="twitter:creator" content="@innoget" />
+        <meta property="article:publisher" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
-        <section className="relative flex flex-wrap items-center py-10 md:py-36">
+        <section className="relative flex flex-wrap items-center pt-10 md:py-36">
           <div className="absolute top-0 left-0 w-full h-full">
             <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
             <picture>
@@ -33,7 +54,7 @@ const Home = () => {
               />
             </picture>
           </div>
-          <div className="container lg:pr-9">
+          <div className="container lg:pr-9 relative z-20">
             <div className="flex flex-wrap justify-start">
               <div className="w-full md:w-6/12 lg:w-7/12 pt-20 lg:pt-24">
                 <div className="w-full md:w-10/12">
@@ -62,11 +83,11 @@ const Home = () => {
                     {HomeTexts.title}
                   </h1>
                   <p className="leading-8">{HomeTexts.subtitle}</p>
-                  <div className="flex items-center mt-8">
+                  <div className="flex flex-start items-center mt-8">
                     <Link href="/especialitats">
                       <a
                         title={CommonTexts.especialitats}
-                        className="button button-light mr-5"
+                        className="button button-light mr-5 w-full lg:w-auto text-center flex justify-center"
                       >
                         {CommonTexts.especialitats}
                       </a>
@@ -74,7 +95,7 @@ const Home = () => {
                     <Link href="/contacte">
                       <a
                         title={CommonTexts.demanaCita}
-                        className="button button-primary"
+                        className="button button-primary w-full lg:w-auto text-center flex justify-center"
                       >
                         {CommonTexts.demanaCita}
                       </a>
@@ -84,7 +105,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-5/12 lg:absolute inset-y-0 right-0 lg:h-full pt-12 lg:pt-32">
+          <div className="w-full md:w-5/12 lg:absolute inset-y-0 right-0 lg:h-full pt-12 lg:pt-32 relative z-20">
             <div className="aspect-w-1 aspect-h-1">
               <picture>
                 <source srcSet="../home-cover.jpg" />
@@ -108,7 +129,7 @@ const Home = () => {
               <h2 className="uppercase flex items-center text-sm text-primary-200 font-bold tracking-widest span-cover">
                 Especialitats
               </h2>
-              <div className="flex flex-wrap w-full -mx-8 mt-8">
+              <div className="flex flex-wrap w-full -mx-4 lg:-mx-8 mt-8">
                 {specialities.map((el, idx) => (
                   <SpecialityBox
                     key={idx}
@@ -134,7 +155,7 @@ const Home = () => {
                   <Link href="/equip">
                     <a
                       title={CommonTexts.llegirmes}
-                      className="button button-primary"
+                      className="button button-primary w-full lg:w-auto flex justify-center"
                     >
                       {CommonTexts.sabermes}{" "}
                       <svg
@@ -159,7 +180,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 mt-16 lg:mt-0">
               <div className="aspect-w-12 aspect-h-9 relative">
                 <span className="absolute left-6 -top-6 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                 <picture>
@@ -180,22 +201,24 @@ const Home = () => {
 
         <section className="relative py-12 md:py-20">
           <div className="container">
-            <div className="bg-primary-100 bg-opacity-20 py-16 px-6 lg:p-32 flex flex-wrap items-center justify-between rounded-md">
-              <div className="w-full md:w-1/3 h-96">
-                <picture>
-                  <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
-                  <img
-                    src="../branding/clinica-dental-graell-cover-bg.jpg"
-                    datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
-                    alt={GlobalTexts.brand}
-                    className="object-cover w-full h-full rounded-md"
-                    width="400"
-                    height="300"
-                    loading="lazy"
-                  />
-                </picture>
+            <div className="bg-primary-100 bg-opacity-20 py-6 lg:py-16 px-6 lg:p-32 flex flex-wrap items-center justify-between rounded-md">
+              <div className="w-full md:w-1/3">
+                <div className="aspect-w-1 aspect-h-1">
+                  <picture>
+                    <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
+                    <img
+                      src="../branding/clinica-dental-graell-cover-bg.jpg"
+                      datasrc="../branding/clinica-dental-graell-cover-bg.jpg"
+                      alt={GlobalTexts.brand}
+                      className="object-cover w-full h-full rounded-md"
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 mt-8 lg:mt-0">
                 <blockquote>{HomeTexts.blockquote_text}</blockquote>
                 <div className="w-full flex flex-col mt-5">
                   <span className="font-bold">Dra. M. Teresa Graell</span>

@@ -5,7 +5,6 @@ import HomeTexts from "../../utils/home.json";
 import CommonTexts from "../../utils/commons.json";
 import Footer from "../../components/Footer";
 import EquipTexts from "../../utils/equip.json";
-import Link from "next/link";
 import CitaPrevia from "../../components/CitaPrevia";
 
 const TeamSheet1 = () => {
@@ -25,10 +24,10 @@ const TeamSheet1 = () => {
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main className="teamsheet">
-        <section className="py-10 md:pt-44 md:pb-20 relative">
+        <section className="pt-24 pb-10 lg:pt-44 md:pb-20 relative">
           <div className="container relative z-10">
             <div className="flex flex-wrap">
-              <div className="w-full md:w-1/4 mt-4 mb-8">
+              <div className="w-full md:w-1/4 lg:mt-4 mb-8">
                 <div className="aspect-w-12 aspect-h-16 relative">
                   <span className="absolute left-5 -top-4 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                   <picture>
@@ -44,7 +43,7 @@ const TeamSheet1 = () => {
                   </picture>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 mt-4 mb-8 pl-32">
+              <div className="w-full md:w-1/2 mt-4 mb-8 lg:pl-32">
                 <ul className="breadcrumb list-none flex items-center">
                   <li>
                     <span>Inici</span>
@@ -59,12 +58,12 @@ const TeamSheet1 = () => {
                     </span>
                   </li>
                 </ul>
-                <h1 className="text-4xl mt-4 mb-5 leading-snug relative z-20">
+                <h1 className="mt-4 mb-5 leading-snug relative z-20">
                   {EquipTexts.persones[0].salutation}{" "}
                   {EquipTexts.persones[0].name}
                 </h1>
                 {colRef}
-                <ul className="mt-10">
+                <ul className="mt-10 pl-6 lg:pl-0">
                   {EquipTexts.persones[0].description.map((el, idx) => (
                     <li key={idx}>{el}</li>
                   ))}

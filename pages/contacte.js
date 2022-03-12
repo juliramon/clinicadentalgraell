@@ -26,9 +26,9 @@ const Contacte = () => {
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
-        <section className="relative overflow-hidden pt-28">
+        <section className="relative overflow-hidden pt-24 lg:pt-28">
           <div className="flex flex-wrap items-center justify-between">
-            <div className="w-full md:w-5/12 h-96 relative z-20">
+            <div className="w-full md:w-5/12 hg-60 lg:h-96 relative z-20">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5896.713122269372!2d1.452031228105912!3d42.3562398450501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a5edc5966ee27b%3A0xdaffd93e0fd19eed!2s25700%20La%20Seu%20d&#39;Urgell%2C%20L%C3%A9rida!5e0!3m2!1ses!2ses!4v1641844428211!5m2!1ses!2ses"
                 style={{ border: "0" }}
@@ -38,7 +38,7 @@ const Contacte = () => {
               ></iframe>
             </div>
             <div className="w-full md:w-1/2">
-              <div className="w-full md:w-2/3 mt-4 mb-8">
+              <div className="px-6 w-full md:w-2/3 mt-10 lg:mt-4 mb-8">
                 <ul className="breadcrumb list-none flex items-center">
                   <li>
                     <span>Inici</span>
@@ -55,8 +55,8 @@ const Contacte = () => {
                   <span className="relative z-20">
                     {ContacteTexts.subtitle}
                   </span>
-                  <div className="flex items-start justify-between">
-                    <ul className="relative z-20 mt-5 w-full md:w-1/2 pr-10 mr-10 border-r border-primary-100">
+                  <div className="flex flex-wrap items-start justify-between">
+                    <ul className="relative z-20 mt-5 w-full md:w-1/2 pr-10 mr-10 lg:border-r border-primary-100">
                       <span className="block mb-2">
                         {ContacteTexts.contactans}
                       </span>

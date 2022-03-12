@@ -14,16 +14,22 @@ h1, h2, h3, h4
     @apply text-primary-400 font-semibold
 
 h1
-    @apply text-5xl leading-tight
+    @apply text-3xl
+    @screen lg
+        @apply text-5xl leading-tight
 
 h2 
-    @apply text-4xl leading-snug
+    @apply text-2xl
+    @screen lg
+        @apply text-4xl leading-snug
 
 h3
     @apply text-xl font-bold
 
 blockquote
-    @apply text-2xl font-normal leading-normal relative
+    @apply text-lg font-normal leading-normal relative
+    @screen lg
+        @apply text-2xl
     &::before
         content: '' 
         display: block

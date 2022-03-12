@@ -16,9 +16,9 @@ const Endodoncia = () => {
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
         <article>
-          <section className="relative overflow-hidden pt-28">
+          <section className="relative overflow-hidden pt-24 lg:pt-28">
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
-              <div className="w-full md:w-5/12 h-96 relative z-20">
+              <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
                   <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
                   <img
@@ -33,7 +33,7 @@ const Endodoncia = () => {
                 </picture>
               </div>
               <div className="w-full md:w-1/2">
-                <div className="w-full md:w-2/3 mt-4 mb-8">
+                <div className="px-6 w-full md:w-2/3 mt-10 lg:mt-4 mb-8">
                   <ul className="breadcrumb list-none flex items-center">
                     <li>
                       <span>Inici</span>
@@ -49,7 +49,7 @@ const Endodoncia = () => {
                     Endodòncia
                   </h1>
                   <div className="pl-16 relative">
-                    <span className="absolute left-6 -top-20 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
+                    <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       L&apos;endodoncista és l&apos;especialista de
                       l&apos;odontologia que estudia tot el relacionat amb el
@@ -61,7 +61,7 @@ const Endodoncia = () => {
               </div>
             </div>
           </section>
-          <section className="relative overflow-hidden py-20">
+          <section className="relative overflow-hidden py-10 lg:py-20">
             <div className="container">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
@@ -73,7 +73,7 @@ const Endodoncia = () => {
                   l&apos;espai i així tornar la funcionalitat a la dent i acabar
                   amb el dolor provocat per la pulpitis.
                 </p>
-                <div className="-ml-24 pt-10 pb-8">
+                <div className="lg:-ml-24 pt-10 pb-8">
                   <blockquote>
                     Gràcies al tractament endodòntic les afectacions dels
                     conductes radiculars que abans provocaven l&apos;exodòncia
@@ -89,7 +89,7 @@ const Endodoncia = () => {
                   situació es dóna per culpa de la necrosi pulpar o mort del
                   nervi, que pot estar causada principalment per situacions com:
                 </p>
-                <ul className="mb-4">
+                <ul className="mb-4 pl-6 lg:pl-0">
                   <li>
                     <span className="font-bold">Càries profunda</span>: la
                     infecció ha arribat a la dentina i ha afectat els conductes

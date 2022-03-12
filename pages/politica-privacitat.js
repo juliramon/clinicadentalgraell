@@ -15,10 +15,10 @@ const PoliticaPrivacitat = () => {
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main className="legal">
-        <section className="relative pt-36">
+        <section className="relative overflow-hidden pt-16 lg:pt-36">
           <div className="flex flex-wrap items-center justify-center">
             <div className="w-full md:w-1/2">
-              <div className="w-full md:w-2/3 mt-4 mb-8">
+              <div className="px-6 w-full md:w-2/3 mt-10 lg:mt-4 mb-8">
                 <ul className="breadcrumb list-none flex items-center">
                   <li>
                     <span>Inici</span>

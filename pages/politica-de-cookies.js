@@ -15,10 +15,10 @@ const PoliticaCookies = () => {
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main className="legal">
-        <section className="relative pt-36">
+        <section className="relative overflow-hidden pt-16 lg:pt-36">
           <div className="flex flex-wrap items-center justify-center">
             <div className="w-full md:w-1/2">
-              <div className="w-full md:w-2/3 mt-4 mb-8">
+              <div className="px-6 w-full md:w-2/3 mt-10 lg:mt-4 mb-8">
                 <ul className="breadcrumb list-none flex items-center">
                   <li>
                     <span>Inici</span>
@@ -197,7 +197,7 @@ const PoliticaCookies = () => {
                   la instal·lació d&apos;aquestes cookies
                 </span>
               </div>
-              <div className="cookies-table">
+              <div className="cookies-table overflow-x-scroll">
                 <div className="table w-full">
                   <div className="table-row-group">
                     <div className="table-row">

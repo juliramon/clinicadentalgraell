@@ -12,7 +12,7 @@ const TeamMember = ({ image, salutation, name, numCol, description, slug }) => {
     ));
   }
   return (
-    <div className="w-full md:w-1/3 py-4 px-16 relative mb-16">
+    <div className="w-full md:w-1/3 py-4 px-8 lg:px-16 relative mb-8 lg:mb-16">
       <div className="relative bg-primary-100 bg-opacity-20 team-item">
         <div className="w-full h-full aspect-w-12 aspect-h-14 relative">
           <span className="absolute left-5 -top-4 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
