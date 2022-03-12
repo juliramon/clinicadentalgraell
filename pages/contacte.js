@@ -7,6 +7,8 @@ import ContacteTexts from "../utils/contacte.json";
 import Footer from "../components/Footer";
 import LegalTexts from "../utils/legal.json";
 import { useState } from "react";
+import axios from "axios";
+import ToastNotification from "../components/ToastNotification";
 
 const Contacte = () => {
   const initalState = {
@@ -14,39 +16,63 @@ const Contacte = () => {
     phone: "",
     email: "",
     subject: "",
-    message: "",
+    comment: "",
+    serverMessage: "",
   };
   const [state, setState] = useState(initalState);
+
+  const [toastState, setToastState] = useState({
+    isVisible: false,
+    duration: 0,
+  });
 
   const handleChange = (e) =>
     setState({ ...state, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e) => {
+  const validateForm = (e) => {
     e.preventDefault();
+    const { name, phone, email, subject, comment } = state;
+    if (
+      name !== "" &&
+      phone !== "" &&
+      email !== "" &&
+      subject !== "" &&
+      comment !== ""
+    ) {
+      handleSubmit(name, phone, email, subject, comment);
+    }
+  };
 
-    const { name, phone, email, subject, message } = state;
-
-    const res = await fetch("/api/send-email", {
-      body: JSON.stringify({
+  const handleSubmit = (name, phone, email, subject, comment) => {
+    axios
+      .post("/api/send-email", {
         name: name,
         phone: phone,
         email: email,
         subject: subject,
-        message: message,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
-
-    const { error } = await res.json();
-    if (error) {
-      console.log(error);
-      return;
-    }
-    console.log(name, phone, email, subject, message);
+        comment: comment,
+      })
+      .then((res) => {
+        if (res.data.status === 200) {
+          setState({
+            name: "",
+            phone: "",
+            email: "",
+            subject: "",
+            comment: "",
+            serverMessage: `El teu missatge ha sigut enviat correctament.
+              Ens posarem en contacte amb tu el més aviat possible.`,
+          });
+          setToastState({ ...state, isVisible: true, duration: 5000 });
+        }
+      })
+      .catch((error) => console.log(error));
   };
+
+  const notification = toastState.isVisible ? (
+    <ToastNotification message={state.serverMessage} />
+  ) : null;
+
   return (
     <>
       <Head>
@@ -145,7 +171,7 @@ const Contacte = () => {
               <h2 className="text-xl flex items-center span-cover m-0 mb-5">
                 {CommonTexts.demanaCita}
               </h2>
-              <form onSubmit={() => handleSubmit}>
+              <form method="POST">
                 <fieldset className="form-group">
                   <label htmlFor="name">Nom</label>
                   <input
@@ -195,13 +221,13 @@ const Contacte = () => {
                   />
                 </fieldset>
                 <fieldset className="form-group">
-                  <label htmlFor="message">Comentaris</label>
+                  <label htmlFor="comment">Comentaris</label>
                   <textarea
-                    id="message"
-                    name="message"
+                    id="comment"
+                    name="comment"
                     rows="5"
                     onChange={handleChange}
-                    value={state.message}
+                    value={state.comment}
                     required
                   >
                     Comentaris
@@ -210,6 +236,7 @@ const Contacte = () => {
                 <button
                   type="submit"
                   className="button button-primary button-small"
+                  onClick={validateForm}
                 >
                   Enviar
                 </button>
@@ -224,6 +251,7 @@ const Contacte = () => {
         </section>
       </main>
       <Footer GlobalTexts={GlobalTexts} HomeTexts={HomeTexts} />
+      {notification}
     </>
   );
 };

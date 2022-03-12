@@ -183,11 +183,11 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
                 <a>Equip</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/clínica" title="Clínica">
                 <a>Clínica</a>
               </Link>
-            </li>
+            </li> */}
             <li className="mt-10 lg:mt-0 lg:ml-5 contact">
               <a
                 href="telf:+973351860"

@@ -84,12 +84,12 @@ const Home = () => {
                   </h1>
                   <p className="leading-8">{HomeTexts.subtitle}</p>
                   <div className="flex flex-start items-center mt-8">
-                    <Link href="/especialitats">
+                    <Link href="/equip">
                       <a
-                        title={CommonTexts.especialitats}
+                        title={"Equip"}
                         className="button button-light mr-5 w-full lg:w-auto text-center flex justify-center"
                       >
-                        {CommonTexts.especialitats}
+                        {"Equip"}
                       </a>
                     </Link>
                     <Link href="/contacte">
