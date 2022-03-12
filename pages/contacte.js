@@ -65,7 +65,6 @@ const Contacte = () => {
                 allowFullScreen
                 className="w-full h-full rounded-tr-md rounded-br-md"
                 loading="lazy"
-                loading="lazy"
               ></iframe>
             </div>
             <div className="w-full md:w-1/2">
