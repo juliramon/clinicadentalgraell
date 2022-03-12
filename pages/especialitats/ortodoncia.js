@@ -63,7 +63,7 @@ const Ortodoncia = () => {
             </div>
           </section>
           <section className="relative overflow-hidden py-20">
-            <div className="container mx-auto">
+            <div className="container">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
                   Cada vegada són més les persones que es consciencien sobre la

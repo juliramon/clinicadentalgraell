@@ -11,7 +11,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-primary-100 bg-opacity-20 py-12 md:pt-24">
-      <div className="container mx-auto border-b border-primary-100 pb-12">
+      <div className="container border-b border-primary-100 pb-12">
         <div className="flex flex-wrap flex-start justify-between -mx-12">
           <div className="w-full md:w-1/4 px-12">
             <picture>
@@ -147,7 +147,7 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto pt-12">
+      <div className="container pt-12">
         <div className="flex flex-wrap flex-start justify-between">
           <ul className="list-none">
             <li className="text-xs">

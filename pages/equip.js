@@ -57,7 +57,7 @@ const Equip = () => {
           </div>
         </section>
         <section className="py-10 md:py-24">
-          <div className="container mx-auto">
+          <div className="container">
             <h2 className="text-xl flex items-center span-cover m-0">
               {EquipTexts.compon}
             </h2>

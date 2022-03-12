@@ -41,7 +41,7 @@ const PoliticaCookies = () => {
           </div>
         </section>
         <section className="py-10 md:pt-14 md:pb-20 relative">
-          <div className="container mx-auto relative z-10">
+          <div className="container relative z-10">
             <div className="w-full md:w-1/2 mt-4 mb-8 mx-auto">
               <p>
                 Les cookies i altres tecnologies similars com ara local shared

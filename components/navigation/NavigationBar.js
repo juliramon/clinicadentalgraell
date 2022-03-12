@@ -28,21 +28,23 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
 
   return (
     <nav
-      className="py-6 px-4 fixed w-full z-50"
+      className="py-6 fixed w-full z-50"
       style={scrolled === true ? blurredNav : solidNav}
     >
-      <div className="lg:container w-full flex items-center justify-between">
+      <div className="container flex items-center justify-between">
         <div className="">
           <Link href="/">
-            <a>
+            <a className="w-28 lg:w-auto h-auto block">
               <picture>
                 <source srcSet="../branding/logo-clinica-dental-graell-seu-urgell.svg" />
                 <img
                   src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
                   data-src="../branding/logo-clinica-dental-graell-seu-urgell.svg"
                   alt="Clínica Dental Graell"
+                  className="w-full h-full object-cover"
                   width="157"
                   height="54"
+                  loading="eager"
                 />
               </picture>
             </a>

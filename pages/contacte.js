@@ -110,7 +110,7 @@ const Contacte = () => {
               />
             </picture>
           </div>
-          <div className="container mx-auto relative z-10">
+          <div className="container relative z-10">
             <div className="w-full md:w-2/4 mx-auto bg-secondary-100 py-8 px-10 rounded-md">
               <h2 className="text-xl flex items-center span-cover m-0 mb-5">
                 {CommonTexts.demanaCita}

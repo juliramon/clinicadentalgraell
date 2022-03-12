@@ -26,7 +26,7 @@ const TeamSheet1 = () => {
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main className="teamsheet">
         <section className="py-10 md:pt-44 md:pb-20 relative">
-          <div className="container mx-auto relative z-10">
+          <div className="container relative z-10">
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/4 mt-4 mb-8">
                 <div className="aspect-w-12 aspect-h-16 relative">
