@@ -38,7 +38,7 @@ const Home = () => {
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
-        <section className="relative flex flex-wrap items-center pt-10 md:py-36">
+        <section className="relative flex flex-wrap items-center pt-10 md:py-36 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full">
             <span className="absolute top-p left-0 w-full h-full bg-primary-100 bg-opacity-40 z-10"></span>
             <picture>
@@ -155,7 +155,7 @@ const Home = () => {
                   <Link href="/equip">
                     <a
                       title={CommonTexts.llegirmes}
-                      className="button button-primary w-full lg:w-auto flex justify-center"
+                      className="button button-primary w-full lg:w-auto flex justify-center lg:inline-flex"
                     >
                       {CommonTexts.sabermes}{" "}
                       <svg

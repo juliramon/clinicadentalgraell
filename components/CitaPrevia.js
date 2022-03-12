@@ -15,7 +15,7 @@ const CitaPrevia = () => {
             <Link href="/contacte">
               <a
                 title={CommonTexts.demanaCita}
-                className="button button-light w-full lg:w-auto flex justify-center"
+                className="button button-light w-full lg:w-auto flex justify-center lg:inline-flex"
               >
                 {CommonTexts.demanaCita}
               </a>

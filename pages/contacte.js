@@ -55,7 +55,7 @@ const Contacte = () => {
                   <span className="relative z-20">
                     {ContacteTexts.subtitle}
                   </span>
-                  <div className="flex flex-wrap items-start justify-between">
+                  <div className="flex flex-wrap lg:flex-nowrap items-start justify-between">
                     <ul className="relative z-20 mt-5 w-full md:w-1/2 pr-10 mr-10 lg:border-r border-primary-100">
                       <span className="block mb-2">
                         {ContacteTexts.contactans}
