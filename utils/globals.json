@@ -9,11 +9,13 @@
   "city": "La Seu d'Urgell",
   "province": "Lleida",
   "horari": {
-    "dilluns": "9am - 6pm",
-    "dimarts": "9am - 6pm",
-    "dimecres": "9am - 6pm",
-    "dijous": "9am - 6pm",
-    "divendres": "9am - 6pm"
+    "dilluns": "9:30am - 1pm / 3:30 – 8pm",
+    "dimarts": "9:30am - 1pm / 3:30 – 8pm",
+    "dimecres": "9:30am - 1pm / 3:30 – 8pm",
+    "dijous": "9:30am - 1pm / 3:30 – 8pm",
+    "divendres": "9:30am - 19pm",
+    "dissabte": "Tancat",
+    "diumenge": "Tancat"
   },
   "social": {
     "facebook": "https://facebook.com/clinicadentalgraell",
