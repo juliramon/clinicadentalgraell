@@ -4,8 +4,8 @@ import Link from "next/link";
 const Footer = ({ GlobalTexts, HomeTexts }) => {
   const horariList = Object.keys(GlobalTexts.horari).map((horari, idx) => (
     <li key={idx}>
-      <span className="capitalize font-bold">{horari}:</span>
-      <span className="inline-block ml-2">{GlobalTexts.horari[horari]}</span>
+      <span className="capitalize font-bold inline-block mr-2">{horari}:</span>
+      <span className="inline-block">{GlobalTexts.horari[horari]}</span>
     </li>
   ));
   const currentYear = new Date().getFullYear();
