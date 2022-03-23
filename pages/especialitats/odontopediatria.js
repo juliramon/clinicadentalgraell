@@ -20,10 +20,14 @@ const Odontopediatria = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source
+                    srcSet="../especialitats/odontopediatria-cover.jpg"
+                    type="image/webp"
+                  />
+                  <source srcSet="../especialitats/odontopediatria-cover.jpg" />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                    src="../especialitats/odontopediatria-cover.jpg"
+                    data-src="../especialitats/odontopediatria-cover.jpg"
                     alt="Odontopediatria"
                     width="400"
                     height="300"
@@ -48,7 +52,7 @@ const Odontopediatria = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Odontopediatria
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       L’odontopediatria és la branca de l’odontologia
@@ -65,6 +69,7 @@ const Odontopediatria = () => {
           <section className="relative overflow-hidden py-10 lg:py-20">
             <div className="container">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
+                <h2 className="text-2xl mb-5">Què és l'odontopediatria?</h2>
                 <p>
                   Els odontopediatres s’encarreguen de detectar precoçment les
                   anomalies de la posició dels maxil·lars per a remetre el
