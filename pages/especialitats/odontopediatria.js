@@ -69,7 +69,9 @@ const Odontopediatria = () => {
           <section className="relative overflow-hidden py-10 lg:py-20">
             <div className="container">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
-                <h2 className="text-2xl mb-5">Què és l'odontopediatria?</h2>
+                <h2 className="text-2xl mb-5">
+                  Què és l&apos;odontopediatria?
+                </h2>
                 <p>
                   Els odontopediatres s&apos;encarreguen de detectar precoçment
                   les anomalies de la posició dels maxil·lars per a remetre el
