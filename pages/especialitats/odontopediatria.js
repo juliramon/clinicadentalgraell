@@ -55,11 +55,11 @@ const Odontopediatria = () => {
                   <div className="relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
-                      L’odontopediatria és la branca de l’odontologia
+                      L&apos;odontopediatria és la branca de l&apos;odontologia
                       encarregada de tractar les dents dels nens, des del
                       naixement fins als 6 anys cuidant les seves dents
                       temporals, i fins als 12 anys quan finalitza la dentició
-                      mixta i s’inicia la definitiva.
+                      mixta i s&apos;inicia la definitiva.
                     </span>
                   </div>
                 </div>
@@ -71,15 +71,15 @@ const Odontopediatria = () => {
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <h2 className="text-2xl mb-5">Què és l'odontopediatria?</h2>
                 <p>
-                  Els odontopediatres s’encarreguen de detectar precoçment les
-                  anomalies de la posició dels maxil·lars per a remetre el
-                  pacient a l’ortodoncista i cirurgià maxil·lofacial i així,
-                  poder modificar o frenar el creixement d’aquests ossos. Així
-                  mateix, detecta els mals hàbits per tal de reeducar, realitzar
-                  un tractament restaurador en cas de càries dental o segellador
-                  per prevenir la futura patologia. Informa també sobre
-                  procediments d’higiene oral per aconseguir un creixement sa de
-                  la cavitat bucal.
+                  Els odontopediatres s&apos;encarreguen de detectar precoçment
+                  les anomalies de la posició dels maxil·lars per a remetre el
+                  pacient a l&apos;ortodoncista i cirurgià maxil·lofacial i
+                  així, poder modificar o frenar el creixement d&apos;aquests
+                  ossos. Així mateix, detecta els mals hàbits per tal de
+                  reeducar, realitzar un tractament restaurador en cas de càries
+                  dental o segellador per prevenir la futura patologia. Informa
+                  també sobre procediments d&apos;higiene oral per aconseguir un
+                  creixement sa de la cavitat bucal.
                 </p>
               </div>
             </div>
