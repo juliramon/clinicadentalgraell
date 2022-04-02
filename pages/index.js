@@ -234,7 +234,7 @@ const Home = () => {
                 Què diuen els nostres clients
               </h2>
             </div>
-            <div class="glide js-reviews-slider">
+            <div className="glide js-reviews-slider">
               <div className="glide__track" data-glide-el="track">
                 <div className="glide__slides">
                   {Reviews.map((review, idx) => {
