@@ -8,8 +8,36 @@ import CommonTexts from "../utils/commons.json";
 import Footer from "../components/Footer";
 import CitaPrevia from "../components/CitaPrevia";
 import Link from "next/link";
+import Reviews from "../utils/reviews.json";
+import ReviewBox from "../components/ReviewBox";
+import Glide from "@glidejs/glide";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    const reviewsSlider = document.querySelector(".js-reviews-slider");
+    if (reviewsSlider) {
+      new Glide(".js-reviews-slider", {
+        type: "carousel",
+        startAt: 0,
+        perView: 3,
+        gap: 20,
+        autoplay: 4000,
+        animationDuration: 3000,
+        breakpoints: {
+          600: {
+            perView: 1,
+          },
+          800: {
+            perView: 2,
+          },
+          1200: {
+            perView: 3,
+          },
+        },
+      }).mount();
+    }
+  }, []);
   return (
     <>
       <Head>
@@ -56,8 +84,8 @@ const Home = () => {
           </div>
           <div className="container lg:pr-9 relative z-20">
             <div className="flex flex-wrap justify-start">
-              <div className="w-full md:w-6/12 lg:w-7/12 pt-20 lg:pt-24">
-                <div className="w-full md:w-10/12">
+              <div className="w-full lg:w-7/12 pt-2 lg:pt-24">
+                <div className="w-full lg:w-10/12">
                   <span className="uppercase flex items-center text-sm text-primary-300 font-bold tracking-widest span-cover">
                     {HomeTexts.tagline}{" "}
                     <svg
@@ -79,7 +107,7 @@ const Home = () => {
                       <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
                     </svg>
                   </span>
-                  <h1 className="mt-4 mb-8 w-full md:w-9/12">
+                  <h1 className="mt-4 mb-8 w-full 2xl:w-9/12">
                     {HomeTexts.title}
                   </h1>
                   <p className="leading-8">{HomeTexts.subtitle}</p>
@@ -105,7 +133,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-5/12 lg:absolute inset-y-0 right-0 lg:h-full pt-12 lg:pt-32 relative z-20">
+          <div className="w-full lg:w-5/12 lg:absolute inset-y-0 right-0 lg:h-full pt-12 lg:pt-32 relative z-20">
             <div className="aspect-w-1 aspect-h-1">
               <picture>
                 <source srcSet="../home-cover.jpg" />
@@ -145,11 +173,11 @@ const Home = () => {
 
         <section className="relative pb-12 md:pb-20 md:pt-8">
           <div className="container flex flex-wrap justify-between">
-            <div className="w-full md:w-1/2 md:py-8">
-              <div className="w-full md:w-9/12">
+            <div className="w-full lg:w-1/2 md:py-8">
+              <div className="w-full lg:w-9/12">
                 <h2 className="mb-5">{HomeTexts.equip_title}</h2>
               </div>
-              <div className="w-full md:w-9/12">
+              <div className="w-full lg:w-9/12">
                 <p className="mt-8">{HomeTexts.equip_text}</p>
                 <div className="mt-12">
                   <Link href="/equip">
@@ -180,7 +208,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 mt-16 lg:mt-0">
+            <div className="w-full lg:w-1/2 mt-16 lg:mt-0">
               <div className="aspect-w-12 aspect-h-9 relative">
                 <span className="absolute left-6 -top-6 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                 <picture>
@@ -199,10 +227,37 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="relative py-12 md:py-20">
+        <section className="relative py-12 md:pb-20">
+          <div className="container">
+            <div className="w-full">
+              <h2 className="mb-12 text-center">
+                Què diuen els nostres clients
+              </h2>
+            </div>
+            <div className="glide js-reviews-slider">
+              <div className="glide__track" data-glide-el="track">
+                <div className="glide__slides">
+                  {Reviews.map((review, idx) => {
+                    return (
+                      <ReviewBox
+                        key={idx}
+                        name={review.name}
+                        photo={review.photo}
+                        description={review.description}
+                        rating={review.rating}
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative py-12 md:pb-20">
           <div className="container">
             <div className="bg-primary-100 bg-opacity-20 py-6 lg:py-16 px-6 lg:p-32 flex flex-wrap items-center justify-between rounded-md">
-              <div className="w-full md:w-1/3">
+              <div className="w-full lg:w-1/3">
                 <div className="aspect-w-1 aspect-h-1">
                   <picture>
                     <source srcSet="../branding/clinica-dental-graell-cover-bg.jpg" />
@@ -218,7 +273,7 @@ const Home = () => {
                   </picture>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 mt-8 lg:mt-0">
+              <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
                 <blockquote>{HomeTexts.blockquote_text}</blockquote>
                 <div className="w-full flex flex-col mt-5">
                   <span className="font-bold">Dra. M. Teresa Graell</span>
@@ -228,6 +283,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <CitaPrevia />
       </main>
       <Footer GlobalTexts={GlobalTexts} HomeTexts={HomeTexts} />

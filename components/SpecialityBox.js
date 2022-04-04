@@ -2,7 +2,7 @@ import React from "react";
 
 const SpecialityBox = ({ icon, title, description }) => {
   return (
-    <div className="w-full md:w-1/4 p-4 lg:px-8">
+    <div className="w-full md:w-1/2 lg:w-1/4 p-4 lg:px-8">
       <div className="mb-7">
         <picture>
           <source srcSet={icon} />

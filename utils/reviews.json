@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Vanessa Hernández Carmona",
+    "description": "La atención al paciente es excelente. Muy buenos profesionales. Dedican tiempo a explicarte todo con detalle y sin prisas. Esto hoy en dia se agradece mucho. Sin duda he quedado muy satisfecha. Lo recomiendo 100%!!",
+    "photo": "../reviews/vanessa-hernandez.png",
+    "rating": "5"
+  },
+  {
+    "name": "Laura Barba",
+    "description": "El tracte per part de tot el personal es EXCELENT, et transmeten moltíssima confiança! Ho recomano 100%! 🤗",
+    "photo": "../reviews/laura-barba.png",
+    "rating": "5"
+  },
+  {
+    "name": "Maragda Corces",
+    "description": "Muy buena profesional y excelente persona! Encantadora con los niños y con las personas. Atención personalizada y resolutiva. Se preocupa por las personas y no por generar dinero.",
+    "photo": "../reviews/maragda-corces.png",
+    "rating": "5"
+  },
+  {
+    "name": "Neus Ramos Martin",
+    "description": "Local nou i tot a la última, cuidant cada detall!! Excelente tracte, molta professionalitat!!",
+    "photo": "../reviews/neus-ramos.png",
+    "rating": "5"
+  }
+]
