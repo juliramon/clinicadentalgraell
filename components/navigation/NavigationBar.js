@@ -107,10 +107,10 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
               <ul className="dropdown-menu">
                 <li>
                   <Link
-                    href="/especialitats/ortodoncia-conservadora"
-                    title="Ortodòncia conservadora"
+                    href="/especialitats/odontologia-conservadora"
+                    title="Ondontologia conservadora"
                   >
-                    <a>Ortodòncia conservadora</a>
+                    <a>Ondontologia conservadora</a>
                   </Link>
                 </li>
                 <li>
