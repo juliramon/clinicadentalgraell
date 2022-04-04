@@ -20,10 +20,13 @@ const CirurgiaOral = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source
+                    srcSet="../especialitats/cirurgia-oral-cover.webp"
+                    type="image/webp"
+                  />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                    src="../especialitats/cirurgia-oral-cover.jpg"
+                    data-src="../especialitats/cirurgia-oral-cover.jpg"
                     alt="Cirurgia Oral"
                     width="400"
                     height="300"
