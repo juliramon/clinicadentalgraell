@@ -201,7 +201,7 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
                   height="30"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
-                  stroke="#082b3d"
+                  stroke="#004f80"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
