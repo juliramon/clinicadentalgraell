@@ -20,10 +20,10 @@ const Endodoncia = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source srcSet="../especialitats/endodoncia-2.jpg" />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                    src="../especialitats/endodoncia-2.jpg"
+                    data-src="../especialitats/endodoncia-2.jpg"
                     alt="Endodòncia"
                     width="400"
                     height="300"
@@ -73,7 +73,26 @@ const Endodoncia = () => {
                   l&apos;espai i així tornar la funcionalitat a la dent i acabar
                   amb el dolor provocat per la pulpitis.
                 </p>
-                <div className="lg:-ml-24 pt-10 pb-8">
+                <div className="w-full mt-4">
+                  <picture>
+                    <img
+                      src="../especialitats/endodoncia-3.jpg"
+                      data-src="../especialitats/endodoncia-3.jpg"
+                      alt="Odontologia conservadora"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      L&apos;endodòncia és la branca de l&apos;odontologia
+                      especialitzada en tractar els conductes radiculars de la
+                      dent, però popularment es coneix amb el nom de “matar el
+                      nervi”
+                    </figcaption>
+                  </picture>
+                </div>
+                <div className="lg:-ml-24 pt-24 pb-8">
                   <blockquote>
                     Gràcies al tractament endodòntic les afectacions dels
                     conductes radiculars que abans provocaven l&apos;exodòncia
@@ -146,6 +165,25 @@ const Endodoncia = () => {
                   segella la dent per evitar que els bacteris tornin a arribar
                   al seu interior.
                 </p>
+                <div className="w-full mt-4 mb-16">
+                  <picture>
+                    <img
+                      src="../especialitats/endodoncia-4.jpg"
+                      data-src="../especialitats/endodoncia-4.jpg"
+                      alt="Odontologia conservadora"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      En la clínica dental Graell apliquem un tractament
+                      personalitzat a cada pacient per realitzar l'extracció del
+                      teixit infectat o inflamat necessari i posteriorment
+                      reconstruir la dent de la manera més efectiva
+                    </figcaption>
+                  </picture>
+                </div>
                 <p>
                   En els casos en què la destrucció de la dent és major serà
                   necessari aplicar una reconstrucció més important per tornar
