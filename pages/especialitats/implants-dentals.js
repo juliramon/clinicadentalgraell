@@ -20,10 +20,10 @@ const ImplantsDentals = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source srcSet="../especialitats/implants-4.jpg" />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                    src="../especialitats/implants-4.jpg"
+                    data-src="../especialitats/implants-4.jpg"
                     alt="Implants dentals"
                     width="400"
                     height="300"
@@ -67,40 +67,60 @@ const ImplantsDentals = () => {
             <div className="container">
               <div className="flex flex-wrap w-full md:w-9/12 lg:w-6/12 mx-auto">
                 <p>
-                  L’estètica dental és la disciplina de l’Odontologia que
-                  s’encarrega de tractar totes aquelles alteracions, dismòrfies
-                  i patologies de la morfologia bucodental per aconseguir un
-                  cànon de bellesa que s’ajusti a l’ideal social d’avui en dia.
+                  L&apos;estètica dental és la disciplina de l&apos;Odontologia
+                  que s&apos;encarrega de tractar totes aquelles alteracions,
+                  dismòrfies i patologies de la morfologia bucodental per
+                  aconseguir un cànon de bellesa que s&apos;ajusti a
+                  l&apos;ideal social d&apos;avui en dia.
                 </p>
                 <p>
                   Generalment, aquelles persones que hagin perdut algun o totes
                   les seves dents són candidats per posar-se implants, però és
                   important que el pacient estigui sa ja que hi ha una sèrie de
-                  condicionants i malalties que poden afectar a l’implant. Per
-                  exemple, la fusió de l’implant amb l’os podria veure afectada
-                  en pacients amb diabetis no controlada, fumadors, alcohòlics o
-                  amb malaltia periodontal no controlada.
+                  condicionants i malalties que poden afectar a l&apos;implant.
+                  Per exemple, la fusió de l&apos;implant amb l&apos;os podria
+                  veure afectada en pacients amb diabetis no controlada,
+                  fumadors, alcohòlics o amb malaltia periodontal no controlada.
                 </p>
+                <div className="w-full mt-4 mb-16">
+                  <picture>
+                    <img
+                      src="../especialitats/implants-2.jpg"
+                      data-src="../especialitats/implants-2.jpg"
+                      alt="Odontologia conservadora"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      La col·locació d&apos;implants en l&apos;os evita la
+                      reducció òssia que es produeix després de la pèrdua de les
+                      dents. Es considera com un tractament definitiu
+                    </figcaption>
+                  </picture>
+                </div>
                 <div className="lg:-ml-24 pt-10 pb-8">
                   <blockquote>
                     Els implants dentals són un cargol de titani que és acceptat
-                    per l’organisme com una cosa pròpia, adaptant-se a la base
-                    òssia de forma natural.
+                    per l&apos;organisme com una cosa pròpia, adaptant-se a la
+                    base òssia de forma natural.
                   </blockquote>
                 </div>
                 <p>
-                  D’aquesta manera, l’os creix ràpidament al voltant d’ell,
-                  produint-se una unió, estable i més duradora que en un altre
-                  tipus de tractament, entre l’implant i l’os.
+                  D&apos;aquesta manera, l&apos;os creix ràpidament al voltant
+                  d&apos;ell, produint-se una unió, estable i més duradora que
+                  en un altre tipus de tractament, entre l&apos;implant i
+                  l&apos;os.
                   <br />
-                  Per aconseguir la reposició d’una dent mitjançant implants
-                  dentals, cal col·locar el cargol de titani a l’os. Finalment
-                  es col·loca la corona que pot ser de ceràmica o resina segons
-                  les situacions.
+                  Per aconseguir la reposició d&apos;una dent mitjançant
+                  implants dentals, cal col·locar el cargol de titani a
+                  l&apos;os. Finalment es col·loca la corona que pot ser de
+                  ceràmica o resina segons les situacions.
                 </p>
                 <p>
-                  D’aquesta manera es construeix un nova dent que romandrà de
-                  manera permanent a la dentadura del pacient donat la seva
+                  D&apos;aquesta manera es construeix un nova dent que romandrà
+                  de manera permanent a la dentadura del pacient donat la seva
                   adhesió amb el teixit ossi.
                   <br />
                   Compten amb diferents beneficis tant funcionals com estètics.
@@ -108,6 +128,24 @@ const ImplantsDentals = () => {
                   suposa una millora notable tant en la seva salut bucodental,
                   com en la seva qualitat de vida i autoestima.
                 </p>
+                <div className="w-full mt-4 mb-16">
+                  <picture>
+                    <img
+                      src="../especialitats/implants-3.jpg"
+                      data-src="../especialitats/implants-3.jpg"
+                      alt="Odontologia conservadora"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      Els implants dentals tenen molts avantatges en comparació
+                      amb les solucions tradicionals de corones, ponts i
+                      pròtesis removibles
+                    </figcaption>
+                  </picture>
+                </div>
                 <p>
                   Els implants dentals tenen molts avantatges en comparació amb
                   les solucions tradicionals de corones, ponts i pròtesis
@@ -117,9 +155,9 @@ const ImplantsDentals = () => {
                   fossin dents naturals. Les dents contigus no han de ser
                   danyats per servir de suport a la nova pròtesi.
                   <br />
-                  La col·locació d’implants en l’os evita la reducció òssia que
-                  es produeix després de la pèrdua de les dents. Es considera
-                  com un tractament definitiu.
+                  La col·locació d&apos;implants en l&apos;os evita la reducció
+                  òssia que es produeix després de la pèrdua de les dents. Es
+                  considera com un tractament definitiu.
                 </p>
               </div>
             </div>
