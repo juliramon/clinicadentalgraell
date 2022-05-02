@@ -178,9 +178,10 @@ const Endodoncia = () => {
                     />
                     <figcaption className="text-xs mt-4">
                       En la clínica dental Graell apliquem un tractament
-                      personalitzat a cada pacient per realitzar l'extracció del
-                      teixit infectat o inflamat necessari i posteriorment
-                      reconstruir la dent de la manera més efectiva
+                      personalitzat a cada pacient per realitzar
+                      l&apos;extracció del teixit infectat o inflamat necessari
+                      i posteriorment reconstruir la dent de la manera més
+                      efectiva
                     </figcaption>
                   </picture>
                 </div>
