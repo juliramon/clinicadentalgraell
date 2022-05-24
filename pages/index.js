@@ -46,7 +46,7 @@ const Home = () => {
         <title>Clínica Dental a la Seu d'Urgell - {GlobalTexts.brand}</title>
         <meta
           name="description"
-          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d’odontologia avançada amb les últimes tecnologies"
+          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d'odontologia avançada amb les últimes tecnologies"
         />
         <link rel="canonical" href="https://clinicadentalgraell.com" />
         <meta name="robots" content="index,follow" />
@@ -54,6 +54,7 @@ const Home = () => {
         <meta name="author" content="Clinica Dental Graell" />
         <link rel="icon" href="../favicon.svg" />
         <link rel="mask-icon" href="../favicon.svg" color="#ffffff" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"></link>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
@@ -64,7 +65,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d’odontologia avançada amb les últimes tecnologies"
+          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d'odontologia avançada amb les últimes tecnologies"
         />
         <meta property="og:image" content="../share.jpg" />
         <meta property="og:url" content="https://clinicadentalgraell.com" />
@@ -78,7 +79,7 @@ const Home = () => {
         />
         <meta
           name="twitter:description"
-          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d’odontologia avançada amb les últimes tecnologies"
+          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d'odontologia avançada amb les últimes tecnologies"
         />
         <meta name="twitter:image" content="../share.jpg" />
       </Head>
