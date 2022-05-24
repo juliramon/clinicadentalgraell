@@ -11,7 +11,50 @@ const CirurgiaOral = () => {
   return (
     <>
       <Head>
-        <title>Cirurgia Oral - {GlobalTexts.brand}</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cirurgia Oral - Clínica Dental Graell</title>
+        <meta
+          name="description"
+          content="A Clínica Dental Graell som experts en cirurgia oral. Fes clic per a més informació sobre la cirurgia oral i les nostres especialitats."
+        />
+        <link
+          rel="canonical"
+          href="https://clinicadentalgraell.com/especialitats/cirurgia-oral"
+        />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="author" content="Clinica Dental Graell" />
+        <link rel="icon" href="../favicon.svg" />
+        <link rel="mask-icon" href="../favicon.svg" color="#ffffff" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"></link>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          property="og:title"
+          content="Cirurgia Oral  - Clínica Dental Graell"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="A Clínica Dental Graell som experts en cirurgia oral. Fes clic per a més informació sobre la cirurgia oral i les nostres especialitats."
+        />
+        <meta property="og:image" content="../share.jpg" />
+        <meta property="og:url" content="https://clinicadentalgraell.com" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@clinicadentalgraell" />
+        <meta name="twitter:creator" content="@clinicadentalgraell" />
+        <meta property="article:publisher" content="Clinica Dental Graell" />
+        <meta
+          name="twitter:title"
+          content="Cirurgia Oral  - Clínica Dental Graell"
+        />
+        <meta
+          name="twitter:description"
+          content="A Clínica Dental Graell som experts en cirurgia oral. Fes clic per a més informació sobre la cirurgia oral i les nostres especialitats."
+        />
+        <meta name="twitter:image" content="../share.jpg" />
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>

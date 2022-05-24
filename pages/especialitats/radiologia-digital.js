@@ -11,7 +11,50 @@ const RadiologiaDigital = () => {
   return (
     <>
       <Head>
-        <title>Radiologia digital - {GlobalTexts.brand}</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Radiologia digital - Clínica Dental Graell</title>
+        <meta
+          name="description"
+          content="A Clínica Dental Graell som experts en radiologia digital. Fes clic per a més informació sobre radiologia digital i les nostres especialitats."
+        />
+        <link
+          rel="canonical"
+          href="https://clinicadentalgraell.com/especialitats/radiologia-digital"
+        />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="author" content="Clinica Dental Graell" />
+        <link rel="icon" href="../favicon.svg" />
+        <link rel="mask-icon" href="../favicon.svg" color="#ffffff" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"></link>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          property="og:title"
+          content="Radiologia digital  - Clínica Dental Graell"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="A Clínica Dental Graell som experts en radiologia digital. Fes clic per a més informació sobre radiologia digital i les nostres especialitats."
+        />
+        <meta property="og:image" content="../share.jpg" />
+        <meta property="og:url" content="https://clinicadentalgraell.com" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@clinicadentalgraell" />
+        <meta name="twitter:creator" content="@clinicadentalgraell" />
+        <meta property="article:publisher" content="Clinica Dental Graell" />
+        <meta
+          name="twitter:title"
+          content="Radiologia digital  - Clínica Dental Graell"
+        />
+        <meta
+          name="twitter:description"
+          content="A Clínica Dental Graell som experts en radiologia digital. Fes clic per a més informació sobre radiologia digital i les nostres especialitats."
+        />
+        <meta name="twitter:image" content="../share.jpg" />
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
@@ -20,11 +63,14 @@ const RadiologiaDigital = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source
+                    srcSet="../especialitats/radiologia-digital-cover.webp"
+                    type="image/webp"
+                  />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    alt="Radiologia digital"
+                    src="../especialitats/radiologia-digital-cover.jpg"
+                    data-src="../especialitats/radiologia-digital-cover.jpg"
+                    alt="Cirurgia Oral"
                     width="400"
                     height="300"
                     className="object-cover object-center w-full h-full"
