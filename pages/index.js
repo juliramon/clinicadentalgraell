@@ -43,26 +43,44 @@ const Home = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inici - {GlobalTexts.brand}</title>
-        <meta name="description" content="" />
-        <link rel="canonical" href="" />
+        <title>Clínica Dental a la Seu d'Urgell - {GlobalTexts.brand}</title>
+        <meta
+          name="description"
+          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d’odontologia avançada amb les últimes tecnologies"
+        />
+        <link rel="canonical" href="https://clinicadentalgraell.com" />
         <meta name="robots" content="index,follow" />
-        <meta name="author" content="Innoget" />
-        <link rel="icon" href="../images/favicon.ico" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="author" content="Clinica Dental Graell" />
+        <link rel="icon" href="../favicon.svg" />
+        <link rel="mask-icon" href="../favicon.svg" color="#ffffff" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta property="og:title" content="" />
+        <meta
+          property="og:title"
+          content="Clínica Dental a la Seu d'Urgell  - {GlobalTexts.brand}"
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
+        <meta
+          property="og:description"
+          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d’odontologia avançada amb les últimes tecnologies"
+        />
+        <meta property="og:image" content="../share.jpg" />
+        <meta property="og:url" content="https://clinicadentalgraell.com" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@innoget" />
-        <meta name="twitter:creator" content="@innoget" />
-        <meta property="article:publisher" content="" />
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:site" content="@clinicadentalgraell" />
+        <meta name="twitter:creator" content="@clinicadentalgraell" />
+        <meta property="article:publisher" content="Clinica Dental Graell" />
+        <meta
+          name="twitter:title"
+          content="Clínica Dental a la Seu d'Urgell  - {GlobalTexts.brand}"
+        />
+        <meta
+          name="twitter:description"
+          content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d’odontologia avançada amb les últimes tecnologies"
+        />
+        <meta name="twitter:image" content="../share.jpg" />
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
       <main>
