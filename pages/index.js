@@ -43,7 +43,9 @@ const Home = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Clínica Dental a la Seu d'Urgell - {GlobalTexts.brand}</title>
+        <title>
+          Clínica Dental a la Seu d&apos;Urgell - {GlobalTexts.brand}
+        </title>
         <meta
           name="description"
           content="Clinica Dental Graell, la teva clínica dental a la Seu d'Urgell. Una moderna clínica dental a la Seu d'Urgell on combinem un servei integral d'odontologia avançada amb les últimes tecnologies"
