@@ -161,9 +161,9 @@ const Periodoncia = () => {
                 <div className="w-full mt-4">
                   <picture>
                     <img
-                      src="../especialitats/endodoncia-3.jpg"
-                      data-src="../especialitats/endodoncia-3.jpg"
-                      alt="Odontologia conservadora"
+                      src="../especialitats/periodoncia-1.jpg"
+                      data-src="../especialitats/periodoncia-1.jpg"
+                      alt="Periodòncia"
                       width="400"
                       height="300"
                       className="object-cover object-center w-full h-full"
