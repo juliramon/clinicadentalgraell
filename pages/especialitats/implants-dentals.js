@@ -174,8 +174,8 @@ const ImplantsDentals = () => {
                 <div className="w-full mt-4 mb-16">
                   <picture>
                     <img
-                      src="../especialitats/implants-3.jpg"
-                      data-src="../especialitats/implants-3.jpg"
+                      src="../especialitats/implants-5.jpg"
+                      data-src="../especialitats/implants-5.jpg"
                       alt="Odontologia conservadora"
                       width="400"
                       height="300"

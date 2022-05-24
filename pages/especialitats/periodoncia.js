@@ -63,11 +63,14 @@ const Periodoncia = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source
+                    srcSet="../especialitats/periodoncia-cover.webp"
+                    type="image/webp"
+                  />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    alt="Periodòncia"
+                    src="../especialitats/periodoncia-cover.jpg"
+                    data-src="../especialitats/periodoncia-cover.jpg"
+                    alt="Odontologia conservadora"
                     width="400"
                     height="300"
                     className="object-cover object-center w-full h-full"
@@ -155,7 +158,28 @@ const Periodoncia = () => {
                   provoca un menor ancoratge de la dent i es pot arribar a
                   perdre la peça.
                 </p>
-                <div className="-ml-24 pt-10 pb-8">
+                <div className="w-full mt-4">
+                  <picture>
+                    <img
+                      src="../especialitats/endodoncia-3.jpg"
+                      data-src="../especialitats/endodoncia-3.jpg"
+                      alt="Odontologia conservadora"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      La periodòncia és l&apos;especialitat de
+                      l&apos;Odontologia que estudia la prevenció, el diagnòstic
+                      i el tractament de les malalties o anomalies que afecten
+                      els teixits que suporten les dents. Les principals
+                      malalties periodontals són la Gingivitis i la
+                      Periodontitis.
+                    </figcaption>
+                  </picture>
+                </div>
+                <div className="-ml-24 pt-24 pb-8">
                   <blockquote>
                     Per prevenir la gingivitis és necessària una bona higiene
                     bucodental i així evitar possibles complicacions posteriors
