@@ -4,18 +4,6 @@ const ReviewBox = ({ name, photo, description, rating }) => {
   return (
     <div className="glide__slide">
       <div className="flex items-start px-5">
-        <div className="min-w-fit">
-          <picture>
-            <img
-              src={photo}
-              alt={name}
-              width="40"
-              height="40"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </picture>
-        </div>
         <div className="pl-4">
           <h4 className="leading-snug">{name}</h4>
           <div className="star-rating flex items-center mt-1">
