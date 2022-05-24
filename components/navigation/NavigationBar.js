@@ -110,7 +110,7 @@ const NavigationBar = ({ GlobalTexts, CommonTexts }) => {
                     href="/especialitats/odontologia-conservadora"
                     title="Ondontologia conservadora"
                   >
-                    <a>Ondontologia conservadora</a>
+                    <a>Odontologia conservadora</a>
                   </Link>
                 </li>
                 <li>

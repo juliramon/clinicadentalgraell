@@ -12,7 +12,7 @@ const TeamSheet3 = () => {
   const colRef =
     EquipTexts.persones[2].numCol !== null ? (
       <p className="text-lg font-semibold">
-        Num. Col. {EquipTexts.persones[0].numCol}
+        Num. Col. {EquipTexts.persones[2].numCol}
       </p>
     ) : null;
   return (
