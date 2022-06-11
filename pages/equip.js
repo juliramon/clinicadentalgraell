@@ -57,10 +57,10 @@ const Equip = () => {
           <div className="flex flex-wrap items-center justify-between">
             <div className="w-full lg:w-5/12 h-60 lg:h-96 relative z-20">
               <picture>
-                <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                <source srcSet="../equip/equip-clinica-dental-graell.jpg" />
                 <img
-                  src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                  data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                  src="../equip/equip-clinica-dental-graellver.jpg"
+                  data-src="../equip/equip-clinica-dental-graellver.jpg"
                   alt={EquipTexts.title}
                   width="400"
                   height="300"
