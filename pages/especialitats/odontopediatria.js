@@ -126,6 +126,27 @@ const Odontopediatria = () => {
                   també sobre procediments d&apos;higiene oral per aconseguir un
                   creixement sa de la cavitat bucal.
                 </p>
+                <div className="w-full mt-4">
+                  <picture>
+                    <img
+                      src="../especialitats/odontopediatria-1.jpg"
+                      data-src="../especialitats/odontopediatria-1.jpg"
+                      alt="Odontopediatria"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      La periodòncia és l&apos;especialitat de
+                      l&apos;Odontologia que estudia la prevenció, el diagnòstic
+                      i el tractament de les malalties o anomalies que afecten
+                      els teixits que suporten les dents. Les principals
+                      malalties periodontals són la Gingivitis i la
+                      Periodontitis.
+                    </figcaption>
+                  </picture>
+                </div>
               </div>
             </div>
           </section>
