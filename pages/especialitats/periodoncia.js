@@ -204,6 +204,25 @@ const Periodoncia = () => {
                   i mal alè però normalment no apareixen fins que la
                   periodontitis ja és avançada.
                 </p>
+                <div className="w-full mt-4 mb-16">
+                  <picture>
+                    <img
+                      src="../especialitats/periodoncia-2.jpg"
+                      data-src="../especialitats/periodoncia-2.jpg"
+                      alt="Periodòncia"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      Dins d’un tractament de periodòncia també ens centrem en
+                      la inflamació de les genives. La causa més comuna de la
+                      inflamació de les genives és la placa dental.
+                      Periodontitis.
+                    </figcaption>
+                  </picture>
+                </div>
                 <p>
                   Quan s’inflamen les genives, entre la dent i la geniva, es
                   formen bosses periodontal on s’estableixen els bacteris que
