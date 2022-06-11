@@ -138,12 +138,11 @@ const Odontopediatria = () => {
                       loading="lazy"
                     />
                     <figcaption className="text-xs mt-4">
-                      La periodòncia és l&apos;especialitat de
-                      l&apos;Odontologia que estudia la prevenció, el diagnòstic
-                      i el tractament de les malalties o anomalies que afecten
-                      els teixits que suporten les dents. Les principals
-                      malalties periodontals són la Gingivitis i la
-                      Periodontitis.
+                      ls odontopediatres s&apos;encarreguen de detectar
+                      precoçment les anomalies de la posició dels maxil·lars per
+                      a remetre el pacient a l&apos;ortodoncista i cirurgià
+                      maxil·lofacial i així, poder modificar o frenar el
+                      creixement d&apos;aquests ossos.
                     </figcaption>
                   </picture>
                 </div>
