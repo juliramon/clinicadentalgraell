@@ -64,7 +64,7 @@ const Equip = () => {
                   alt={EquipTexts.title}
                   width="400"
                   height="300"
-                  className="object-cover object-center w-full h-full lg:rounded-tr-md lg:rounded-br-md"
+                  className="object-contain object-center w-full h-full lg:rounded-tr-md lg:rounded-br-md"
                   loading="lazy"
                 />
               </picture>
