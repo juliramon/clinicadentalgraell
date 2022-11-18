@@ -29,6 +29,7 @@ class MyDocument extends Document {
             }}
           />
           <script
+            async
             type="text/javascript"
             src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js"
             charSet="UTF-8"
