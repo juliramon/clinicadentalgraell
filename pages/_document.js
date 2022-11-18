@@ -30,6 +30,11 @@ class MyDocument extends Document {
           />
           <script
             type="text/javascript"
+            src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js"
+            charSet="UTF-8"
+          ></script>
+          <script
+            type="text/javascript"
             charSet="UTF-8"
             dangerouslySetInnerHTML={{
               __html: `document.addEventListener('DOMContentLoaded', function (){{cookieconsent.run({
