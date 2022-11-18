@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import NavigationBar from "../../components/navigation/NavigationBar";
 import GlobalTexts from "../../utils/globals.json";
@@ -6,8 +5,21 @@ import HomeTexts from "../../utils/home.json";
 import CommonTexts from "../../utils/commons.json";
 import Footer from "../../components/Footer";
 import CitaPrevia from "../../components/CitaPrevia";
+import { useRef, useEffect } from "react";
+import Glide from "@glidejs/glide";
 
 const Ortodoncia = () => {
+  const sliderConfiguration = {
+    autoplay: 4000,
+    type: "carousel",
+    gap: 0,
+  };
+  const ref = useRef();
+  useEffect(() => {
+    const slider = new Glide(ref.current, sliderConfiguration);
+    slider.mount();
+  }, [ref]);
+
   return (
     <>
       <Head>
@@ -63,10 +75,10 @@ const Ortodoncia = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source srcSet="../especialitats/ortodoncia-3.jpg" />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                    src="../especialitats/ortodoncia-3.jpg"
+                    data-src="../especialitats/ortodoncia-3.jpg"
                     alt="Ortodòncia"
                     width="400"
                     height="300"
@@ -122,7 +134,106 @@ const Ortodoncia = () => {
                   l’ortodoncista pot corregir grans defectes també a l’edat
                   adulta.
                 </p>
-                <div className="lg:-ml-24 pt-10 pb-8">
+                <div ref={ref} className="glide my-4 w-full mx-auto">
+                  <div className="glide__track" data-glide-el="track">
+                    <div className="glide__slides">
+                      <div className="glide__slide">
+                        <picture>
+                          <img
+                            src="../especialitats/ortodoncia-1.jpg"
+                            data-src="../especialitats/ortodoncia-1.jpg"
+                            alt="Ortodoncia"
+                            width="400"
+                            height="300"
+                            className="object-cover object-center w-full h-full"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div className="glide__slide">
+                        <picture>
+                          <img
+                            src="../especialitats/ortodoncia-2.jpg"
+                            data-src="../especialitats/ortodoncia-2.jpg"
+                            alt="Ortodoncia"
+                            width="400"
+                            height="300"
+                            className="object-cover object-center w-full h-full"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div className="glide__slide">
+                        <picture>
+                          <img
+                            src="../especialitats/ortodoncia-2.jpg"
+                            data-src="../especialitats/ortodoncia-2.jpg"
+                            alt="Ortodoncia"
+                            width="400"
+                            height="300"
+                            className="object-cover object-center w-full h-full"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div className="glide__slide">
+                        <picture>
+                          <img
+                            src="../especialitats/ortodoncia-3.jpg"
+                            data-src="../especialitats/ortodoncia-3.jpg"
+                            alt="Ortodoncia"
+                            width="400"
+                            height="300"
+                            className="object-cover object-center w-full h-full"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div className="glide__slide">
+                        <picture>
+                          <img
+                            src="../especialitats/ortodoncia-4.jpg"
+                            data-src="../especialitats/ortodoncia-4.jpg"
+                            alt="Ortodoncia"
+                            width="400"
+                            height="300"
+                            className="object-cover object-center w-full h-full"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div className="glide__slide">
+                        <picture>
+                          <img
+                            src="../especialitats/ortodoncia-5.jpg"
+                            data-src="../especialitats/ortodoncia-5.jpg"
+                            alt="Ortodoncia"
+                            width="400"
+                            height="300"
+                            className="object-cover object-center w-full h-full"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="glide__bullets" data-glide-el="controls[nav]">
+                    <button
+                      className="glide__bullet"
+                      data-glide-dir="=0"
+                    ></button>
+                    <button
+                      className="glide__bullet"
+                      data-glide-dir="=1"
+                    ></button>
+                    <button
+                      className="glide__bullet"
+                      data-glide-dir="=2"
+                    ></button>
+                  </div>
+                </div>
+
+                <div className="lg:-ml-24 py-8">
                   <blockquote>
                     Les dents alineades produeixen una millor funció, són més
                     fàcils de netejar i, en conseqüència, més fàcils de mantenir
