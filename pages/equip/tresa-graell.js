@@ -8,8 +8,8 @@ import EquipTexts from "../../utils/equip.json";
 import Link from "next/link";
 import CitaPrevia from "../../components/CitaPrevia";
 
-const TeamSheet2 = () => {
-  const teamMemberIndex = 1;
+const TeamSheet4 = () => {
+  const teamMemberIndex = 5;
   const teamMemberObj = EquipTexts.persones[teamMemberIndex];
   const colRef =
     teamMemberObj.numCol !== null ? (
@@ -82,4 +82,4 @@ const TeamSheet2 = () => {
   );
 };
 
-export default TeamSheet2;
+export default TeamSheet4;

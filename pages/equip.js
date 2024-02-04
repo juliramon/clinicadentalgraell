@@ -8,10 +8,10 @@ import Footer from "../components/Footer";
 import EquipTexts from "../utils/equip.json";
 import TeamMember from "../components/TeamMember";
 import CitaPrevia from "../components/CitaPrevia";
-import ReactHtmlParser from "react-html-parser";
+import parse from "html-react-parser";
 
 const Equip = () => {
-  const subtitle = ReactHtmlParser(EquipTexts.subtitle);
+  const subtitle = parse(EquipTexts.subtitle);
   return (
     <>
       <Head>

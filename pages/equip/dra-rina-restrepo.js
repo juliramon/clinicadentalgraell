@@ -9,17 +9,19 @@ import Link from "next/link";
 import CitaPrevia from "../../components/CitaPrevia";
 
 const TeamSheet3 = () => {
+  const teamMemberIndex = 2;
+  const teamMemberObj = EquipTexts.persones[teamMemberIndex];
   const colRef =
-    EquipTexts.persones[2].numCol !== null ? (
+    teamMemberObj.numCol !== null ? (
       <p className="text-lg font-semibold">
-        Num. Col. {EquipTexts.persones[2].numCol}
+        Num. Col. {teamMemberObj.numCol}
       </p>
     ) : null;
   return (
     <>
       <Head>
         <title>
-          {EquipTexts.persones[2].salutation} {EquipTexts.persones[2].name} -{" "}
+          {teamMemberObj.salutation} {teamMemberObj.name} -{" "}
           {GlobalTexts.brand}
         </title>
       </Head>
@@ -33,9 +35,9 @@ const TeamSheet3 = () => {
                   <span className="absolute left-5 -top-4 bg-primary-100 h-full p-24 w-full bg-opacity-20 rounded-md"></span>
                   <picture>
                     <img
-                      src={EquipTexts.persones[2].image}
-                      datasrc={EquipTexts.persones[2].image}
-                      alt={EquipTexts.persones[2].name}
+                      src={teamMemberObj.image}
+                      datasrc={teamMemberObj.image}
+                      alt={teamMemberObj.name}
                       className="object-cover w-full h-full rounded-md"
                       width="400"
                       height="300"
@@ -54,18 +56,18 @@ const TeamSheet3 = () => {
                   </li>
                   <li>
                     <span>
-                      {EquipTexts.persones[2].salutation}{" "}
-                      {EquipTexts.persones[2].name}
+                      {teamMemberObj.salutation}{" "}
+                      {teamMemberObj.name}
                     </span>
                   </li>
                 </ul>
                 <h1 className="mt-4 mb-5 leading-snug relative z-20">
-                  {EquipTexts.persones[2].salutation}{" "}
-                  {EquipTexts.persones[2].name}
+                  {teamMemberObj.salutation}{" "}
+                  {teamMemberObj.name}
                 </h1>
                 {colRef}
                 <ul className="mt-10 pl-6 lg:pl-0">
-                  {EquipTexts.persones[2].description.map((el, idx) => (
+                  {teamMemberObj.description.map((el, idx) => (
                     <li key={idx}>{el}</li>
                   ))}
                 </ul>

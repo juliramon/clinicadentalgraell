@@ -68,6 +68,14 @@
       "numCol": null,
       "description": ["Auxiliar de clínica i atenció al pacient"],
       "slug": "/equip/carmen-graell-bigata"
+    },
+    {
+      "image": "../equip/tresa-graell.jpg",
+      "salutation": "",
+      "name": "Tresa Graell",
+      "numCol": null,
+      "description": ["Auxiliar de clínica i atenció al pacient"],
+      "slug": "/equip/tresa-graell"
     }
   ]
 }
