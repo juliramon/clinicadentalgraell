@@ -63,15 +63,15 @@ const ProtesisDental = () => {
             <div className="flex flex-wrap items-center justify-between bg-primary-100 bg-opacity-20">
               <div className="w-full md:w-5/12 h-60 lg:h-96 relative z-20">
                 <picture>
-                  <source srcSet="../branding/equip-clinica-dentall-graell-cover.jpg" />
+                  <source srcSet="../especialitats/protesis-dentals-1.jpg" />
                   <img
-                    src="../branding/equip-clinica-dentall-graell-cover.jpg"
-                    data-src="../branding/equip-clinica-dentall-graell-cover.jpg"
+                    src="../especialitats/protesis-dentals-1.jpg"
+                    data-src="../especialitats/protesis-dentals-1.jpg"
                     alt="Pròtesis dentals"
                     width="400"
                     height="300"
                     className="object-cover object-center w-full h-full"
-                    loading="lazy"
+                    loading="eager"
                   />
                 </picture>
               </div>
@@ -124,7 +124,23 @@ const ProtesisDental = () => {
                     d’oferir als pacient la millor atenció possible.
                   </blockquote>
                 </div>
-                <p>
+                <div className="w-full mt-4">
+                  <picture>
+                    <img
+                      src="../especialitats/protesis-dentals-2.jpg"
+                      data-src="../especialitats/protesis-dentals-2.jpg"
+                      alt="Pròtesis dentals a la Seu d'Urgell"
+                      width="400"
+                      height="300"
+                      className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-xs mt-4">
+                      El prostodoncista elabora plans de tractament en estreta col·laboració amb altres odontòlegs especialistes, per tal d’oferir als pacient la millor atenció possible.
+                    </figcaption>
+                  </picture>
+                </div>
+                <p className="mt-20">
                   Bona part de la feina quotidiana d’un prostodoncista té a
                   veure amb l’estètica dental. Tant si es tracta d’una única
                   restauració o una rehabilitació més extensa. Tot procediment
