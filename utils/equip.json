@@ -56,7 +56,7 @@
     {
       "image": "../equip/dra-elisabet-buguna.jpg",
       "salutation": "",
-      "name": "Elisabet Buguña Reguant",
+      "name": "Elisabet Buguñà Reguant",
       "numCol": null,
       "description": ["Auxiliar de clínica i atenció al pacient"],
       "slug": "/equip/elisabet-buguna-reguant"
@@ -72,10 +72,10 @@
     {
       "image": "../equip/tresa-graell.jpg",
       "salutation": "",
-      "name": "Tresa Graell",
+      "name": "Tresa Graell Graell",
       "numCol": null,
       "description": ["Auxiliar de clínica i atenció al pacient"],
-      "slug": "/equip/tresa-graell"
+      "slug": "/equip/tresa-graell-graell"
     }
   ]
 }
