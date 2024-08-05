@@ -94,7 +94,7 @@ const Periodoncia = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Periodòncia
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="lg:pl-16 relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       La periodòncia és l’especialitat de l’Odontologia que
@@ -159,7 +159,7 @@ const Periodoncia = () => {
                   perdre la peça.
                 </p>
                 <div className="w-full mt-4">
-                  <picture>
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/periodoncia-1.jpg"
                       data-src="../especialitats/periodoncia-1.jpg"
@@ -179,7 +179,7 @@ const Periodoncia = () => {
                     </figcaption>
                   </picture>
                 </div>
-                <div className="-ml-24 pt-24 pb-8">
+                <div className="lg:-ml-24 py-8">
                   <blockquote>
                     Per prevenir la gingivitis és necessària una bona higiene
                     bucodental i així evitar possibles complicacions posteriors

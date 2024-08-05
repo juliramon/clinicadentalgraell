@@ -91,7 +91,7 @@ const Endodoncia = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Endodòncia
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="lg:pl-16 relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       L&apos;endodoncista és l&apos;especialista de
@@ -117,7 +117,7 @@ const Endodoncia = () => {
                   amb el dolor provocat per la pulpitis.
                 </p>
                 <div className="w-full mt-4">
-                  <picture>
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/endodoncia-3.jpg"
                       data-src="../especialitats/endodoncia-3.jpg"
@@ -135,7 +135,7 @@ const Endodoncia = () => {
                     </figcaption>
                   </picture>
                 </div>
-                <div className="lg:-ml-24 pt-24 pb-8">
+                <div className="lg:-ml-24 pt-12 pb-8">
                   <blockquote>
                     Gràcies al tractament endodòntic les afectacions dels
                     conductes radiculars que abans provocaven l&apos;exodòncia
@@ -208,8 +208,8 @@ const Endodoncia = () => {
                   segella la dent per evitar que els bacteris tornin a arribar
                   al seu interior.
                 </p>
-                <div className="w-full mt-4 mb-16">
-                  <picture>
+                <div className="w-full mt-4 mb-8">
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/endodoncia-4.jpg"
                       data-src="../especialitats/endodoncia-4.jpg"

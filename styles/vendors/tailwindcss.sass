@@ -5,7 +5,7 @@
 body
     @apply font-normal text-primary-300 leading-7
 
-p 
+p
     @apply text-primary-300 mb-4
     &:last-child
         @apply mb-0
@@ -18,7 +18,7 @@ h1
     @screen lg
         @apply text-5xl leading-tight
 
-h2 
+h2
     @apply text-2xl
     @screen lg
         @apply text-4xl leading-snug
@@ -31,7 +31,7 @@ blockquote
     @screen lg
         @apply text-2xl
     &::before
-        content: '' 
+        content: ''
         display: block
         position: absolute
         top: 0px
@@ -44,9 +44,9 @@ blockquote
 main li
     @apply pl-3 relative
     &::before
-        @apply absolute block -left-5
         content: "–"
         margin-right: 15px
+        @apply absolute block -left-5
 
 button[type='button'], button[type='reset'], button[type='submit']
     @apply bg-primary-500 text-secondary-100

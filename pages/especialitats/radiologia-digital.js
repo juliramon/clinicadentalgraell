@@ -94,7 +94,7 @@ const RadiologiaDigital = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Radiologia digital
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="lg:pl-16 relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       Les radiografies intraorals i extraorals són les proves

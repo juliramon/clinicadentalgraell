@@ -94,7 +94,7 @@ const OdontologiaConservadora = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Odontologia conservadora
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="lg:pl-16 relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       L’odontologia conservadora i restauradora ens permet
@@ -122,7 +122,7 @@ const OdontologiaConservadora = () => {
                   dentals.{" "}
                 </p>
                 <div className="w-full mt-4">
-                  <picture>
+                  <picture className="flex flex-col w-full h-full">
                     <source
                       srcSet="../especialitats/odontologia-conservadora-img.webp"
                       type="image/webp"
@@ -143,7 +143,7 @@ const OdontologiaConservadora = () => {
                     </figcaption>
                   </picture>
                 </div>
-                <div className="lg:-ml-24 pt-24 pb-8">
+                <div className="lg:-ml-24 py-8">
                   <blockquote>
                     A dia d’avui, l’odontologia restauradora engloba un arsenal
                     de possibilitats pel que fa a la tècnica i materials de

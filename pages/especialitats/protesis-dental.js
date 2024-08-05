@@ -91,7 +91,7 @@ const ProtesisDental = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Pròtesis dental
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="lg:pl-16 relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       La prostodòncia és la branca de l’odontologia que
@@ -117,7 +117,7 @@ const ProtesisDental = () => {
                   patir problemes estètics, alteració de la funció masticatòria,
                   malestar psicològic i deteriorament de la qualitat de vida.
                 </p>
-                <div className="lg:-ml-24 pt-10 pb-8">
+                <div className="lg:-ml-24 py-8">
                   <blockquote>
                     El prostodoncista elabora plans de tractament en estreta
                     col·laboració amb altres odontòlegs especialistes, per tal
@@ -125,7 +125,7 @@ const ProtesisDental = () => {
                   </blockquote>
                 </div>
                 <div className="w-full mt-4">
-                  <picture>
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/protesis-dentals-2.jpg"
                       data-src="../especialitats/protesis-dentals-2.jpg"
@@ -136,11 +136,13 @@ const ProtesisDental = () => {
                       loading="lazy"
                     />
                     <figcaption className="text-xs mt-4">
-                      El prostodoncista elabora plans de tractament en estreta col·laboració amb altres odontòlegs especialistes, per tal d’oferir als pacient la millor atenció possible.
+                      El prostodoncista elabora plans de tractament en estreta
+                      col·laboració amb altres odontòlegs especialistes, per tal
+                      d’oferir als pacient la millor atenció possible.
                     </figcaption>
                   </picture>
                 </div>
-                <p className="mt-20">
+                <p className="pt-8">
                   Bona part de la feina quotidiana d’un prostodoncista té a
                   veure amb l’estètica dental. Tant si es tracta d’una única
                   restauració o una rehabilitació més extensa. Tot procediment

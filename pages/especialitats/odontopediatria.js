@@ -127,7 +127,7 @@ const Odontopediatria = () => {
                   creixement sa de la cavitat bucal.
                 </p>
                 <div className="w-full mt-4">
-                  <picture>
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/odontopediatria-1.jpg"
                       data-src="../especialitats/odontopediatria-1.jpg"
@@ -138,7 +138,7 @@ const Odontopediatria = () => {
                       loading="lazy"
                     />
                     <figcaption className="text-xs mt-4">
-                      ls odontopediatres s&apos;encarreguen de detectar
+                      Els odontopediatres s&apos;encarreguen de detectar
                       precoçment les anomalies de la posició dels maxil·lars per
                       a remetre el pacient a l&apos;ortodoncista i cirurgià
                       maxil·lofacial i així, poder modificar o frenar el

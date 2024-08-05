@@ -91,7 +91,7 @@ const ImplantsDentals = () => {
                   <h1 className="text-3xl mt-10 mb-7 leading-snug relative z-20">
                     Implants dentals
                   </h1>
-                  <div className="pl-16 relative">
+                  <div className="lg:pl-16 relative">
                     <span className="hidden lg:block absolute left-6 -top-20 bg-primary-100 h-full p-28 w-full bg-opacity-20 rounded-md"></span>
                     <span className="relative z-20">
                       Els implants dentals són la millor solució per a la
@@ -125,8 +125,8 @@ const ImplantsDentals = () => {
                   veure afectada en pacients amb diabetis no controlada,
                   fumadors, alcohòlics o amb malaltia periodontal no controlada.
                 </p>
-                <div className="w-full mt-4 mb-16">
-                  <picture>
+                <div className="w-full mt-4 mb-8">
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/implants-2.jpg"
                       data-src="../especialitats/implants-2.jpg"
@@ -143,7 +143,7 @@ const ImplantsDentals = () => {
                     </figcaption>
                   </picture>
                 </div>
-                <div className="lg:-ml-24 pt-10 pb-8">
+                <div className="lg:-ml-24 pb-8">
                   <blockquote>
                     Els implants dentals són un cargol de titani que és acceptat
                     per l&apos;organisme com una cosa pròpia, adaptant-se a la
@@ -171,8 +171,8 @@ const ImplantsDentals = () => {
                   suposa una millora notable tant en la seva salut bucodental,
                   com en la seva qualitat de vida i autoestima.
                 </p>
-                <div className="w-full mt-4 mb-16">
-                  <picture>
+                <div className="w-full mt-4 mb-8">
+                  <picture className="flex flex-col w-full h-full">
                     <img
                       src="../especialitats/implants-5.jpg"
                       data-src="../especialitats/implants-5.jpg"
