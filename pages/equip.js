@@ -96,17 +96,19 @@ const Equip = () => {
               {EquipTexts.compon}
             </h2>
             <div className="flex flex-wrap w-full relative mt-12 lg:-mx-16">
-              {EquipTexts.persones.map((persona, idx) => (
-                <TeamMember
-                  key={idx}
-                  image={persona.image}
-                  salutation={persona.salutation}
-                  name={persona.name}
-                  numCol={persona.numCol}
-                  description={persona.description}
-                  slug={persona.slug}
-                />
-              ))}
+              {EquipTexts.persones.map((persona, idx) =>
+                persona.isTeamMember ? (
+                  <TeamMember
+                    key={idx}
+                    image={persona.image}
+                    salutation={persona.salutation}
+                    name={persona.name}
+                    numCol={persona.numCol}
+                    description={persona.description}
+                    slug={persona.slug}
+                  />
+                ) : null
+              )}
             </div>
           </div>
         </section>

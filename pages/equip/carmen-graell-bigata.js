@@ -13,16 +13,13 @@ const TeamSheet5 = () => {
   const teamMemberObj = EquipTexts.persones[teamMemberIndex];
   const colRef =
     teamMemberObj.numCol !== null ? (
-      <p className="text-lg font-semibold">
-        Num. Col. {teamMemberObj.numCol}
-      </p>
+      <p className="text-lg font-semibold">Num. Col. {teamMemberObj.numCol}</p>
     ) : null;
   return (
     <>
       <Head>
         <title>
-          {teamMemberObj.salutation} {teamMemberObj.name} -{" "}
-          {GlobalTexts.brand}
+          {teamMemberObj.salutation} {teamMemberObj.name} - {GlobalTexts.brand}
         </title>
       </Head>
       <NavigationBar GlobalTexts={GlobalTexts} CommonTexts={CommonTexts} />
@@ -56,14 +53,12 @@ const TeamSheet5 = () => {
                   </li>
                   <li>
                     <span>
-                      {teamMemberObj.salutation}{" "}
-                      {teamMemberObj.name}
+                      {teamMemberObj.salutation} {teamMemberObj.name}
                     </span>
                   </li>
                 </ul>
                 <h1 className="mt-4 mb-5 leading-snug relative z-20">
-                  {teamMemberObj.salutation}{" "}
-                  {teamMemberObj.name}
+                  {teamMemberObj.salutation} {teamMemberObj.name}
                 </h1>
                 {colRef}
                 <ul className="mt-10 pl-6 lg:pl-0">
