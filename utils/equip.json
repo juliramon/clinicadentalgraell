@@ -75,6 +75,17 @@
       "isTeamMember": true
     },
     {
+      "image": "../equip/valentina-torras-guillot.jpg",
+      "salutation": "",
+      "name": "Valentina Torras Guillot",
+      "numCol": null,
+      "description": [
+        "Higienista dental, auxiliar de clínica i atenció al pacient"
+      ],
+      "slug": "/equip/valentina-torras-guillot",
+      "isTeamMember": true
+    },
+    {
       "image": "../equip/tresa-graell.jpg",
       "salutation": "",
       "name": "Tresa Graell Graell",
