@@ -154,13 +154,13 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
               © {GlobalTexts.brand} {currentYear}. Tots els drets reservats.
             </li>
           </ul>
-          <ul className="list-none flex items-center">
-            <li className="mr-5 text-xs">
+          <ul className="list-none flex items-center gap-x-5">
+            <li className="text-xs">
               <Link href="/avis-legal" title="Avís legal">
                 <a>Avís legal</a>
               </Link>
             </li>
-            <li className="mr-5 text-xs">
+            <li className="text-xs">
               <Link href="/politica-privacitat" title="Política de privacitat">
                 <a>Política de privacitat</a>
               </Link>
@@ -168,6 +168,11 @@ const Footer = ({ GlobalTexts, HomeTexts }) => {
             <li className="text-xs">
               <Link href="/politica-de-cookies" title="Política de cookies">
                 <a>Política de cookies</a>
+              </Link>
+            </li>
+            <li className="text-xs">
+              <Link href="/politica-de-reserves" title="Política de reserves">
+                <a>Política de reserves</a>
               </Link>
             </li>
           </ul>
